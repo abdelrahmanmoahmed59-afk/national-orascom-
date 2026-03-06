@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <style>
+    .label{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-size:20px; fill:#ffffff; font-weight:600}
+    .caption{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; font-size:16px; fill:#94a3b8}
+    .overlay{fill:rgba(0,0,0,0.28)}
+  </style>
+  <rect width="100%" height="100%" fill="#0f172a"/>
+
+  <!-- Row 1 -->
+  <image x="40" y="40" width="360" height="240" href="/images/categories/valves.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="40" y="40" width="360" height="240" class="overlay" />
+  <text x="60" y="270" class="label">Valves</text>
+
+  <image x="420" y="40" width="360" height="240" href="/images/categories/pumps.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="420" y="40" width="360" height="240" class="overlay" />
+  <text x="440" y="270" class="label">Pumps</text>
+
+  <image x="800" y="40" width="360" height="240" href="/images/categories/floating-products.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="800" y="40" width="360" height="240" class="overlay" />
+  <text x="820" y="270" class="label">Floating Products</text>
+
+  <!-- Row 2 -->
+  <image x="40" y="320" width="360" height="240" href="/images/categories/hoses-filtering.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="40" y="320" width="360" height="240" class="overlay" />
+  <text x="60" y="550" class="label">Hoses & Filtering</text>
+
+  <image x="420" y="320" width="360" height="240" href="/images/categories/electrical.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="420" y="320" width="360" height="240" class="overlay" />
+  <text x="440" y="550" class="label">Electrical</text>
+
+  <image x="800" y="320" width="360" height="240" href="/images/categories/bearings.jpg" preserveAspectRatio="xMidYMid slice" />
+  <rect x="800" y="320" width="360" height="240" class="overlay" />
+  <text x="820" y="550" class="label">Bearings</text>
+
+  <!-- Footer caption -->
+  <text x="40" y="740" class="caption">Screenshot name: categories-screenshot.svg — generated composite of product categories</text>
+</svg>

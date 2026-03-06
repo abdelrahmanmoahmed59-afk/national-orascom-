@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animated ACT logo: rotating gear + letter reveal -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="ACT animated logo">
+  <style>
+    .gear { transform-origin: 60px 60px; animation: gear-rotate 6s linear infinite; }
+    .bob { animation: bob 4s ease-in-out infinite; transform-origin: center; }
+    .letters { opacity: 0; transform-origin: center; animation: letters-in 900ms cubic-bezier(.22,1,.36,1) forwards 250ms; }
+    .letters tspan { display:block }
+
+    @keyframes gear-rotate { from { transform: rotate(0deg) } to { transform: rotate(360deg) } }
+    @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+    @keyframes letters-in { 0% { opacity: 0; transform: translateY(8px) scale(0.98) } 100% { opacity: 1; transform: translateY(0) scale(1) } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gear, .bob { animation: none }
+      .letters { animation: none; opacity: 1; transform: none }
+    }
+  </style>
+
+  <!-- left gear/icon -->
+  <g class="bob gear" transform="translate(18,10)">
+    <circle cx="42" cy="50" r="18" fill="#111" fill-opacity="0.08" />
+    <path d="M42 32v-8" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M42 68v8" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M24 50h-8" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M60 50h8" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M30 38l-6-6" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M54 62l6 6" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M30 62l-6 6" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <path d="M54 38l6-6" stroke="#111" stroke-width="4" stroke-linecap="round" />
+    <circle cx="42" cy="50" r="10" fill="#111" />
+  </g>
+
+  <!-- letters ACT -->
+  <g transform="translate(110,24)" class="letters">
+    <text x="0" y="32" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="64" fill="#0f172a">
+      <tspan x="0" dy="0">A</tspan>
+    </text>
+    <text x="80" y="32" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="64" fill="#0f172a">
+      <tspan x="80" dy="0">C</tspan>
+    </text>
+    <text x="150" y="32" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="64" fill="#0f172a">
+      <tspan x="150" dy="0">T</tspan>
+    </text>
+  </g>
+
+  <!-- small tagline under letters -->
+  <text x="110" y="82" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#475569">Automation & Supply</text>
+</svg>
