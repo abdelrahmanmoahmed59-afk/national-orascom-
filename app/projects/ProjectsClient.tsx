@@ -8,6 +8,8 @@ import type { ProjectItem } from "@/lib/site-content/schema"
 
 export default function ProjectsClient({ projects }: { projects: ProjectItem[] }) {
   const { language, dir } = useLanguage()
+  const tableProjects = projects.filter((p) => p.showInProjectsTable !== false)
+  const dropdownProjects = projects.filter((p) => p.showInProjectsDropdown !== false)
 
   function formatAmount(value?: number) {
     if (typeof value !== "number" || Number.isNaN(value)) return "—"
@@ -72,7 +74,7 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
             </p>
           </AnimatedSection>
 
-          {projects.length === 0 ? (
+          {tableProjects.length === 0 ? (
             <AnimatedSection animation="reveal-up" delay={150}>
               <div className="border border-border/60 p-8 text-muted-foreground">
                 {language === "en" ? "No projects yet." : "لا توجد مشاريع بعد."}
@@ -82,7 +84,7 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
             <>
               {/* Mobile cards */}
               <div className="md:hidden space-y-3">
-                {projects.map((project, index) => {
+                {tableProjects.map((project, index) => {
                   const href = `/projects/${encodeURIComponent(project.slug)}`
                   const title = language === "en" ? project.titleEn : project.titleAr
                   const client = (language === "en" ? project.clientEn : project.clientAr) || "—"
@@ -160,7 +162,7 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                         </tr>
                       </thead>
                       <tbody>
-                        {projects.map((project, index) => {
+                        {tableProjects.map((project, index) => {
                           const href = `/projects/${encodeURIComponent(project.slug)}`
                           const title = language === "en" ? project.titleEn : project.titleAr
                           const client = (language === "en" ? project.clientEn : project.clientAr) || "—"
@@ -210,79 +212,87 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
             </p>
           </AnimatedSection>
 
-          <div className="space-y-4">
-            {projects.map((project, index) => (
-              <AnimatedSection key={project.slug} animation="reveal-up" delay={Math.min(index * 75, 300)}>
-                <details className="group border border-border/60 bg-background/50 hover:bg-background/70 transition-colors">
-                  <summary className="cursor-pointer list-none p-6 lg:p-8">
-                    <div className="flex items-start justify-between gap-6">
-                      <div className="min-w-0">
-                        <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">
-                          {language === "en" ? project.categoryEn : project.categoryAr} •{" "}
-                          {language === "en" ? project.locationEn : project.locationAr} • {project.year}
-                        </p>
-                        <h3 className="font-serif text-2xl lg:text-3xl mt-2">
-                          {language === "en" ? project.titleEn : project.titleAr}
-                        </h3>
-                      </div>
-                      <ChevronDown className="h-5 w-5 text-muted-foreground transition-transform group-open:rotate-180" />
-                    </div>
-                  </summary>
-
-                  <div className="px-6 lg:px-8 pb-6 lg:pb-8">
-                    <div className="grid lg:grid-cols-12 gap-10 items-start">
-                      <div className="lg:col-span-5">
-                        <div className="aspect-4/3 overflow-hidden border border-border/60">
-                          <img
-                            src={project.heroImageUrl}
-                            alt={language === "en" ? project.titleEn : project.titleAr}
-                            className="w-full h-full object-cover"
-                          />
+          {dropdownProjects.length === 0 ? (
+            <AnimatedSection animation="reveal-up" delay={150}>
+              <div className="border border-border/60 p-8 text-muted-foreground">
+                {language === "en" ? "No projects yet." : "لا توجد مشاريع بعد."}
+              </div>
+            </AnimatedSection>
+          ) : (
+            <div className="space-y-4">
+              {dropdownProjects.map((project, index) => (
+                <AnimatedSection key={project.slug} animation="reveal-up" delay={Math.min(index * 75, 300)}>
+                  <details className="group border border-border/60 bg-background/50 hover:bg-background/70 transition-colors">
+                    <summary className="cursor-pointer list-none p-6 lg:p-8">
+                      <div className="flex items-start justify-between gap-6">
+                        <div className="min-w-0">
+                          <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">
+                            {language === "en" ? project.categoryEn : project.categoryAr} •{" "}
+                            {language === "en" ? project.locationEn : project.locationAr} • {project.year}
+                          </p>
+                          <h3 className="font-serif text-2xl lg:text-3xl mt-2">
+                            {language === "en" ? project.titleEn : project.titleAr}
+                          </h3>
                         </div>
+                        <ChevronDown className="h-5 w-5 text-muted-foreground transition-transform group-open:rotate-180" />
                       </div>
+                    </summary>
 
-                      <div className="lg:col-span-7 space-y-6">
-                        <p className="text-muted-foreground leading-relaxed">
-                          {language === "en" ? project.summaryEn : project.summaryAr}
-                        </p>
-
-                        <div className="grid sm:grid-cols-2 gap-6">
-                          <div>
-                            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">
-                              {language === "en" ? "Scope" : "نطاق الأعمال"}
-                            </p>
-                            <ul className="text-sm text-muted-foreground space-y-2 list-disc ps-5">
-                              {(language === "en" ? project.scopeEn : project.scopeAr).map((item) => (
-                                <li key={item}>{item}</li>
-                              ))}
-                            </ul>
-                          </div>
-                          <div>
-                            <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">
-                              {language === "en" ? "Highlights" : "أبرز النقاط"}
-                            </p>
-                            <ul className="text-sm text-muted-foreground space-y-2 list-disc ps-5">
-                              {(language === "en" ? project.highlightsEn : project.highlightsAr).map((item) => (
-                                <li key={item}>{item}</li>
-                              ))}
-                            </ul>
+                    <div className="px-6 lg:px-8 pb-6 lg:pb-8">
+                      <div className="grid lg:grid-cols-12 gap-10 items-start">
+                        <div className="lg:col-span-5">
+                          <div className="aspect-4/3 overflow-hidden border border-border/60">
+                            <img
+                              src={project.heroImageUrl}
+                              alt={language === "en" ? project.titleEn : project.titleAr}
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                         </div>
 
-                        <Link
-                          href={`/projects/${encodeURIComponent(project.slug)}`}
-                          className="inline-flex items-center gap-2 text-sm tracking-wide hover-border-reveal pb-1"
-                        >
-                          {language === "en" ? "View project details" : "عرض تفاصيل المشروع"}
-                          <ArrowUpRight className="h-4 w-4" />
-                        </Link>
+                        <div className="lg:col-span-7 space-y-6">
+                          <p className="text-muted-foreground leading-relaxed">
+                            {language === "en" ? project.summaryEn : project.summaryAr}
+                          </p>
+
+                          <div className="grid sm:grid-cols-2 gap-6">
+                            <div>
+                              <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">
+                                {language === "en" ? "Scope" : "نطاق الأعمال"}
+                              </p>
+                              <ul className="text-sm text-muted-foreground space-y-2 list-disc ps-5">
+                                {(language === "en" ? project.scopeEn : project.scopeAr).map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">
+                                {language === "en" ? "Highlights" : "أبرز النقاط"}
+                              </p>
+                              <ul className="text-sm text-muted-foreground space-y-2 list-disc ps-5">
+                                {(language === "en" ? project.highlightsEn : project.highlightsAr).map((item) => (
+                                  <li key={item}>{item}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+
+                          <Link
+                            href={`/projects/${encodeURIComponent(project.slug)}`}
+                            className="inline-flex items-center gap-2 text-sm tracking-wide hover-border-reveal pb-1"
+                          >
+                            {language === "en" ? "View project details" : "عرض تفاصيل المشروع"}
+                            <ArrowUpRight className="h-4 w-4" />
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </details>
-              </AnimatedSection>
-            ))}
-          </div>
+                  </details>
+                </AnimatedSection>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </div>

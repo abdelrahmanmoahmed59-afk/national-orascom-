@@ -39,7 +39,10 @@ export default function HomeClient({
   const heroRef = useRef<HTMLElement | null>(null)
 
   const featuredServices = useMemo(() => services.slice(0, 3), [services])
-  const featuredProjects = useMemo(() => projects.slice(0, 3), [projects])
+  const featuredProjects = useMemo(
+    () => projects.filter((project) => project.showInProjectsDropdown !== false).slice(0, 3),
+    [projects],
+  )
 
   const stats = useMemo(
     () => [

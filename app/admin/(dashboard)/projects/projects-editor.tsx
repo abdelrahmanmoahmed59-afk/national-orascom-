@@ -6,27 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-
-type ProjectItem = {
-  slug: string
-  titleEn: string
-  titleAr: string
-  categoryEn: string
-  categoryAr: string
-  locationEn: string
-  locationAr: string
-  year: string
-  summaryEn: string
-  summaryAr: string
-  detailsEn?: string
-  detailsAr?: string
-  scopeEn: string[]
-  scopeAr: string[]
-  highlightsEn: string[]
-  highlightsAr: string[]
-  heroImageUrl: string
-  galleryImageUrls: string[]
-}
+import type { ProjectItem } from "@/lib/site-content/schema"
 
 type ProjectDraft = ProjectItem & {
   editorId: string
@@ -169,11 +149,18 @@ export default function ProjectsEditor({ initialProjects }: { initialProjects: P
         slug: makeUniqueSlug("New Project", prev, ""),
         titleEn: "New Project",
         titleAr: "مشروع جديد",
+        clientEn: "",
+        clientAr: "",
         categoryEn: "Category",
         categoryAr: "تصنيف",
         locationEn: "Kuwait",
         locationAr: "الكويت",
         year: new Date().getFullYear().toString(),
+        amountKd: undefined,
+        statusEn: "",
+        statusAr: "",
+        showInProjectsTable: true,
+        showInProjectsDropdown: true,
         summaryEn: "",
         summaryAr: "",
         detailsEn: "",
@@ -382,6 +369,31 @@ export default function ProjectsEditor({ initialProjects }: { initialProjects: P
                         onChange={(e) => updateProject(project.editorId, { locationAr: e.target.value })}
                         className="rounded-none h-11 border-foreground/20"
                       />
+                    </div>
+                    <div className="space-y-2 sm:col-span-2">
+                      <Label className="text-xs tracking-[0.15em] uppercase">Visibility</Label>
+                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-1">
+                        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <input
+                            type="checkbox"
+                            checked={project.showInProjectsTable}
+                            onChange={(e) => updateProject(project.editorId, { showInProjectsTable: e.target.checked })}
+                            className="h-4 w-4 accent-primary"
+                          />
+                          Show in Projects table
+                        </label>
+                        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <input
+                            type="checkbox"
+                            checked={project.showInProjectsDropdown}
+                            onChange={(e) =>
+                              updateProject(project.editorId, { showInProjectsDropdown: e.target.checked })
+                            }
+                            className="h-4 w-4 accent-primary"
+                          />
+                          Show in Projects dropdown
+                        </label>
+                      </div>
                     </div>
                   </div>
 

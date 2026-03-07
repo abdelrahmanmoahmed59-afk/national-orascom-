@@ -88,6 +88,7 @@ export function Navbar({
   ]
 
   const isProjectsActive = pathname === "/projects" || pathname.startsWith("/projects/")
+  const dropdownProjects = projects.filter((project) => project.showInProjectsDropdown !== false)
 
   return (
     <>
@@ -174,7 +175,7 @@ export function Navbar({
                   </DropdownMenuItem>
                   <div className="h-px bg-border my-1" />
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1">
-                    {projects.map((project) => (
+                    {dropdownProjects.map((project) => (
                       <DropdownMenuItem
                         key={project.slug}
                         asChild
@@ -330,7 +331,7 @@ export function Navbar({
                     >
                       {language === "en" ? "All Projects" : "جميع المشاريع"}
                     </Link>
-                    {projects.map((project) => {
+                    {dropdownProjects.map((project) => {
                       const projectHref = `/projects/${encodeURIComponent(project.slug)}`
                       return (
                         <Link

@@ -117,6 +117,8 @@ const projectSchema = z.object({
   amountKd: z.number().finite().nonnegative().optional(),
   statusEn: z.string().default(""),
   statusAr: z.string().default(""),
+  showInProjectsTable: z.boolean().default(true),
+  showInProjectsDropdown: z.boolean().default(true),
   summaryEn: z.string(),
   summaryAr: z.string(),
   detailsEn: z.string().optional(),

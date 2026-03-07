@@ -101,6 +101,8 @@ export default function TableProjectsEditor({ initialProjects }: { initialProjec
           amountKd: undefined,
           statusEn: "",
           statusAr: "",
+          showInProjectsTable: true,
+          showInProjectsDropdown: true,
           summaryEn: "",
           summaryAr: "",
           detailsEn: "",
@@ -245,6 +247,31 @@ export default function TableProjectsEditor({ initialProjects }: { initialProjec
                         className="rounded-none h-11 border-foreground/20"
                       />
                     </div>
+                    <div className="space-y-2">
+                      <Label className="text-xs tracking-[0.15em] uppercase">Visibility</Label>
+                      <div className="flex flex-col gap-2 pt-1">
+                        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <input
+                            type="checkbox"
+                            checked={project.showInProjectsTable}
+                            onChange={(e) => updateProject(project.editorId, { showInProjectsTable: e.target.checked })}
+                            className="h-4 w-4 accent-primary"
+                          />
+                          Show in Projects table
+                        </label>
+                        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <input
+                            type="checkbox"
+                            checked={project.showInProjectsDropdown}
+                            onChange={(e) =>
+                              updateProject(project.editorId, { showInProjectsDropdown: e.target.checked })
+                            }
+                            className="h-4 w-4 accent-primary"
+                          />
+                          Show in Projects dropdown
+                        </label>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -362,4 +389,3 @@ export default function TableProjectsEditor({ initialProjects }: { initialProjec
     </div>
   )
 }
-
