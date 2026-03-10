@@ -1,0 +1,1449 @@
+{
+  "version": 1,
+  "branding": {
+    "companyName": {
+      "en": "National Orascom",
+      "ar": "ناشونال أوراسكوم"
+    },
+    "tagline": {
+      "en": "Construction & Contracting",
+      "ar": "البناء والمقاولات"
+    },
+    "logo": {
+      "src": "/logo%20national%20orascom%20company.png",
+      "alt": {
+        "en": "National Orascom",
+        "ar": "ناشونال أوراسكوم"
+      }
+    },
+    "favicon": {
+      "src": "/logo%20national%20orascom%20company.png"
+    }
+  },
+  "contact": {
+    "address": {
+      "en": "Kuwait City, Kuwait\nBusiness District to Shuwaikh, Kuwait",
+      "ar": "مدينة الكويت، الكويت\nمنطقة الأعمال إلى الشويخ، الكويت"
+    },
+    "phone": "+965 9558 8251",
+    "email": "info@nationalorascom.com",
+    "hours": {
+      "en": "Sunday - Thursday: 8:00 AM - 5:00 PM",
+      "ar": "الأحد - الخميس: 8:00 صباحاً - 5:00 مساءً"
+    },
+    "socials": [
+      {
+        "id": "linkedin",
+        "type": "linkedin",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "id": "instagram",
+        "type": "instagram",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "id": "facebook",
+        "type": "facebook",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "id": "x",
+        "type": "x",
+        "url": "https://www.youtube.com/"
+      }
+    ]
+  },
+  "clients": {
+    "title": {
+      "en": "Clients",
+      "ar": "العملاء"
+    },
+    "subtitle": {
+      "en": "Trusted partnerships",
+      "ar": "شراكات موثوقة"
+    },
+    "description": {
+      "en": "We collaborate with developers, operators, and consultants to deliver projects with safety-first execution and clear documentation.",
+      "ar": "نتعاون مع المطورين والمشغلين والاستشاريين لتسليم المشاريع بتنفيذ يضع السلامة أولاً وتوثيق واضح."
+    },
+    "highlights": {
+      "en": [
+        "Clear scope definition and transparent reporting",
+        "Safety-first execution and documented QA/QC",
+        "Reliable coordination across stakeholders"
+      ],
+      "ar": [
+        "تحديد واضح لنطاق العمل وتقارير شفافة",
+        "تنفيذ يضع السلامة أولاً وإجراءات جودة موثقة",
+        "تنسيق موثوق بين جميع الأطراف"
+      ]
+    },
+    "items": [
+      {
+        "id": "client-01",
+        "name": {
+          "en": "Client One",
+          "ar": "العميل الأول"
+        },
+        "logoSrc": "/uploads/clients/7590af72-21ef-44b1-8881-ed4052a9e1b5.png"
+      },
+      {
+        "id": "client-02",
+        "name": {
+          "en": "Client Two",
+          "ar": "العميل الثاني"
+        },
+        "logoSrc": "/uploads/clients/2725701a-3dc3-4c8f-a7c0-05fddb5ea5fb.png"
+      },
+      {
+        "id": "client-03",
+        "name": {
+          "en": "Client Three",
+          "ar": "العميل الثالث"
+        },
+        "logoSrc": "/uploads/clients/bd41f7c7-1c91-45ed-a247-87cffda5d981.png"
+      },
+      {
+        "id": "client-04",
+        "name": {
+          "en": "Client Four",
+          "ar": "العميل الرابع"
+        },
+        "logoSrc": "/uploads/clients/13b5cabb-b2a0-488b-9c97-a69135bc29c2.png"
+      },
+      {
+        "id": "client-05",
+        "name": {
+          "en": "Client Five",
+          "ar": "العميل الخامس"
+        },
+        "logoSrc": "/uploads/clients/d5075b02-a9d2-448b-b052-2470bb280cc3.png"
+      },
+      {
+        "id": "client-06",
+        "name": {
+          "en": "Client Six",
+          "ar": "العميل السادس"
+        },
+        "logoSrc": "/uploads/clients/12b271ee-deff-4923-ac1f-1f2266d438cf.png"
+      },
+      {
+        "id": "be6c22c4-b92c-48be-8a8a-a0504c2d72de",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/3bfccb7b-ff81-4bb1-a9c3-55c00f4f2490.png",
+        "websiteUrl": ""
+      },
+      {
+        "id": "96495d30-9be0-4544-95e4-593e098233f2",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/d9cc4856-f442-47ce-b339-ff68bad032d0.png",
+        "websiteUrl": ""
+      },
+      {
+        "id": "7d639b38-eab3-4b46-86f0-925c5d7c8ac2",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/5643bec1-5821-4d3d-9be4-8395549fec66.png",
+        "websiteUrl": ""
+      },
+      {
+        "id": "d5f79253-252b-45bf-90f6-093ee443f393",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/17afde73-df8c-4fa7-b14d-c4269c57016f.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "8cbe1c41-3c70-4028-aaa4-06ca56844bf1",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/f800959f-2a2d-4a92-a494-cfbbf6749e43.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "31d6b0ce-c57c-4062-8dae-2fa0c6fff5be",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/cc3161b2-821e-4f01-8e44-5d77dc0ddf74.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "c5092d8c-6722-41ee-b4d6-7f41fdcc4750",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/7e849a59-a2cb-43a9-9aad-a1ce42dbd744.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "a0157995-a8a3-4efc-b6c7-722cc238a19a",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/76db8fcd-6145-49ca-bb69-c324eb9dc4bf.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "707803b8-f694-458f-9a60-ad602ea05568",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/4f9f7633-a75b-4083-b245-89a89c69e9ce.jpg",
+        "websiteUrl": ""
+      },
+      {
+        "id": "0c39afeb-3198-4aa4-984f-ca15a0082954",
+        "name": {
+          "en": "New client",
+          "ar": "عميل جديد"
+        },
+        "logoSrc": "/uploads/clients/5820d3d3-d02c-450a-a529-236aa20e0a6f.jpg",
+        "websiteUrl": ""
+      }
+    ]
+  },
+  "about": {
+    "excerptEn": "National Orascom delivers construction and contracting projects with a focus on safety, quality, and reliable execution.",
+    "excerptAr": "تقدم ناشونال أوراسكوم مشاريع البناء والمقاولات مع التركيز على السلامة والجودة والتنفيذ الموثوق.",
+    "titleEn": "Built on delivery. Driven by quality.",
+    "titleAr": "نبني بالإنجاز ونقود بالجودة.",
+    "contentEn": "We partner with developers, operators, and consultants to deliver projects across the full lifecycle — from planning and mobilization to handover. Our teams combine disciplined project management with strong site leadership to meet schedule, budget, and quality requirements.",
+    "contentAr": "نعمل مع المطورين والمشغلين والاستشاريين لتسليم المشاريع عبر دورة المشروع كاملة — من التخطيط وتجهيز الموقع حتى التسليم. تجمع فرقنا بين إدارة مشاريع منضبطة وقيادة ميدانية قوية لتحقيق متطلبات الوقت والتكلفة والجودة.",
+    "missionEn": "Deliver projects safely, on time, and to a standard we stand behind.",
+    "missionAr": "تسليم المشاريع بأمان وفي الوقت المحدد وبمعيار نفخر به.",
+    "visionEn": "Be a trusted contracting partner known for dependable execution and lasting value.",
+    "visionAr": "أن نكون شريكاً موثوقاً في المقاولات معروفاً بالتنفيذ الموثوق والقيمة المستدامة.",
+    "industryEn": "We focus on contracting services across residential, commercial, industrial, and infrastructure sectors.",
+    "industryAr": "نركز على خدمات المقاولات في قطاعات السكني والتجاري والصناعي والبنية التحتية.",
+    "customerEn": "We prioritize transparent communication, proactive coordination, and clear documentation from start to handover.",
+    "customerAr": "نضع التواصل الواضح والتنسيق الاستباقي والتوثيق المنظم في صميم عملنا من البداية حتى التسليم.",
+    "imageUrl": "/modern-corporate-building-kuwait-premium-architect.jpg"
+  },
+  "aboutStats": [
+    {
+      "value": 15,
+      "suffix": "+",
+      "labelEn": "Years of Delivery",
+      "labelAr": "سنوات من الإنجاز"
+    },
+    {
+      "value": 120,
+      "suffix": "+",
+      "labelEn": "Projects Supported",
+      "labelAr": "مشروع تم دعمه"
+    },
+    {
+      "value": 300,
+      "suffix": "+",
+      "labelEn": "Team Members",
+      "labelAr": "عضو فريق"
+    },
+    {
+      "value": 0,
+      "suffix": "",
+      "labelEn": "Compromise on Safety",
+      "labelAr": "تنازل عن السلامة"
+    }
+  ],
+  "aboutValues": [
+    {
+      "titleEn": "Safety First",
+      "titleAr": "السلامة أولاً",
+      "descEn": "We plan, brief, and execute with HSE embedded in every activity.",
+      "descAr": "نخطط وننفذ مع تضمين السلامة في كل نشاط."
+    },
+    {
+      "titleEn": "Quality Delivery",
+      "titleAr": "جودة التنفيذ",
+      "descEn": "Clear QA/QC checkpoints and disciplined site supervision.",
+      "descAr": "نقاط ضبط جودة واضحة وإشراف ميداني منضبط."
+    },
+    {
+      "titleEn": "Reliable Coordination",
+      "titleAr": "تنسيق موثوق",
+      "descEn": "Proactive communication with all stakeholders to keep work moving.",
+      "descAr": "تواصل استباقي مع جميع الأطراف لضمان تقدم الأعمال."
+    },
+    {
+      "titleEn": "Accountability",
+      "titleAr": "المسؤولية",
+      "descEn": "We own outcomes — schedule, cost, and quality — with transparent reporting.",
+      "descAr": "نلتزم بالنتائج — الوقت والتكلفة والجودة — بتقارير واضحة."
+    }
+  ],
+  "aboutMilestones": [
+    {
+      "year": "2012",
+      "titleEn": "Expanded contracting capabilities",
+      "titleAr": "توسيع قدرات المقاولات"
+    },
+    {
+      "year": "2016",
+      "titleEn": "Scaled multi-site operations",
+      "titleAr": "توسيع عمليات متعددة المواقع"
+    },
+    {
+      "year": "2020",
+      "titleEn": "Strengthened HSE programs",
+      "titleAr": "تعزيز برامج السلامة"
+    },
+    {
+      "year": "2024",
+      "titleEn": "Delivered complex project packages",
+      "titleAr": "تسليم حزم مشاريع معقدة"
+    }
+  ],
+  "services": [
+    {
+      "id": "general-contracting",
+      "num": "01",
+      "titleEn": "General Contracting",
+      "titleAr": "المقاولات العامة",
+      "descEn": "End-to-end delivery for commercial, residential, and industrial builds.",
+      "descAr": "تنفيذ متكامل لمشاريع البناء التجارية والسكنية والصناعية.",
+      "imageUrl": "/modern-corporate-building-kuwait-premium-architect.jpg"
+    },
+    {
+      "id": "civil-structural",
+      "num": "02",
+      "titleEn": "Civil & Structural Works",
+      "titleAr": "الأعمال المدنية والإنشائية",
+      "descEn": "Concrete, steel, and structural packages built with rigorous quality control.",
+      "descAr": "حزم خرسانية وحديدية وإنشائية بجودة صارمة وإشراف دقيق.",
+      "imageUrl": "/modern-industrial-facility-aerial-view-premium.jpg"
+    },
+    {
+      "id": "mep",
+      "num": "03",
+      "titleEn": "MEP Services",
+      "titleAr": "خدمات الميكانيكا والكهرباء والسباكة",
+      "descEn": "Design coordination and installation for mechanical, electrical, and plumbing systems.",
+      "descAr": "تنسيق التصميم وتنفيذ وتركيب أنظمة الميكانيكا والكهرباء والسباكة.",
+      "imageUrl": "/technical-consulting-engineers.jpg"
+    },
+    {
+      "id": "fit-out",
+      "num": "04",
+      "titleEn": "Interior Fit-Out",
+      "titleAr": "التشطيبات الداخلية",
+      "descEn": "High-end finishes for offices, retail, hospitality, and residential spaces.",
+      "descAr": "تشطيبات عالية الجودة للمكاتب والمتاجر والضيافة والمساحات السكنية.",
+      "imageUrl": "/modern-corporate-office-building-kuwait.jpg"
+    },
+    {
+      "id": "project-management",
+      "num": "05",
+      "titleEn": "Project Management",
+      "titleAr": "إدارة المشاريع",
+      "descEn": "Planning, scheduling, cost control, and stakeholder coordination across the project lifecycle.",
+      "descAr": "تخطيط وجدولة وضبط تكاليف وتنسيق أصحاب المصلحة طوال دورة المشروع.",
+      "imageUrl": "/warehouse-logistics-boxes.jpg"
+    },
+    {
+      "id": "hse-quality",
+      "num": "06",
+      "titleEn": "HSE & Quality Assurance",
+      "titleAr": "السلامة والجودة",
+      "descEn": "Safety-first execution with documented QA/QC procedures on site.",
+      "descAr": "تنفيذ يضع السلامة أولاً مع إجراءات موثقة لضمان الجودة ومراقبتها في الموقع.",
+      "imageUrl": "/safety-equipment-helmets-and-gear.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "construction-and-completion-of-workers-housing-in-the-subhan-area-block-11",
+      "titleEn": "Construction and completion of workers' housing in the Subhan area Block 11",
+      "titleAr": "إنشاء واستكمال مساكن العمال في منطقة سبهان، المربع 11",
+      "clientEn": "Ministry of Municipalities - Ministry of Finance",
+      "clientAr": "وزارة البلديات - وزارة المالية",
+      "categoryEn": "Skelton",
+      "categoryAr": "سكيلتون",
+      "locationEn": "Subhan",
+      "locationAr": "صبحان",
+      "year": "2023",
+      "amountKd": 300000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction and completion of workers' housing in the Subhan area Block 11",
+      "summaryAr": "إنشاء واستكمال مساكن العمال في منطقة سبهان، المربع 11",
+      "detailsEn": "Construction and completion of workers' housing in the Subhan area Block 11",
+      "detailsAr": "إنشاء واستكمال مساكن العمال في منطقة سبهان، المربع 11",
+      "scopeEn": [
+        "Structural works",
+        "MEP installation",
+        "Interior fit-out",
+        "Testing & commissioning"
+      ],
+      "scopeAr": [
+        "الأعمال الإنشائية",
+        "تنفيذ أنظمة الميكانيكا والكهرباء والسباكة",
+        "التشطيبات الداخلية",
+        "الاختبارات والتشغيل التجريبي"
+      ],
+      "highlightsEn": [
+        "Phased handover plan",
+        "Premium interior packages",
+        "On-site QA/QC checkpoints"
+      ],
+      "highlightsAr": [
+        "خطة تسليم على مراحل",
+        "حزم تشطيبات متميزة",
+        "نقاط ضبط جودة في الموقع"
+      ],
+      "heroImageUrl": "/uploads/projects/75be4db1-f90b-4185-8b2e-80078369cf69.png",
+      "galleryImageUrls": [
+        "/uploads/projects/5ba77f7e-b774-49a5-a7ef-085099c764ba.png",
+        "/uploads/projects/be5a2b79-d43a-4fdb-b132-a796a4241b0f.png",
+        "/uploads/projects/ffc6b47a-0c1f-4465-99ce-c822d5b5cd74.png",
+        "/uploads/projects/b0b349c7-b451-494e-b49a-ad1b415684c3.png",
+        "/uploads/projects/acddc8b3-dbcb-4394-a891-4212d2cae77b.png",
+        "/uploads/projects/0198db02-60d1-4824-acec-7570da63886f.png",
+        "/uploads/projects/be927361-4c22-4df4-917e-267c9d56f5aa.png",
+        "/uploads/projects/8d2f673f-c4e1-4297-9016-86340d64c749.png",
+        "/uploads/projects/fec3d035-8300-4f0f-9a67-96fb655c1910.png",
+        "/uploads/projects/f4b62f35-ec69-4571-9734-a49568737f66.png",
+        "/uploads/projects/e38cc22f-78a7-411a-b928-730f3bc31406.png",
+        "/uploads/projects/a54571c1-e18e-4b3e-8cc9-05ac9d967914.png",
+        "/uploads/projects/15c553f5-47c4-4e7d-a905-c10571d52a96.png",
+        "/uploads/projects/015aeca2-98bd-4aef-a289-3753fec25cad.png",
+        "/uploads/projects/bf5c264a-27ee-444b-9e78-8417a8815ff7.png",
+        "/uploads/projects/e9dfd39d-d13d-4b6d-a43b-d38ede78e822.png",
+        "/uploads/projects/f085c7fd-8c89-4855-8bc5-11106c3c57d2.png",
+        "/uploads/projects/ece5ff82-3cd3-40cc-a19e-0bd1846bc66a.jpg",
+        "/uploads/projects/fea98631-ddad-4fc9-9fcf-ff60ed6ec914.png",
+        "/uploads/projects/c2ef0d18-b956-41af-b51a-f209dd58c7b5.png",
+        "/uploads/projects/5df3713a-7d7d-4147-9957-f5706de904c6.jpg",
+        "/uploads/projects/47613b88-396c-4914-8d68-362bff249c60.png",
+        "/uploads/projects/dcc40e55-58f6-49a5-9ff5-fe4b45807ef1.png",
+        "/uploads/projects/11770d7a-639b-448d-9df1-2138069cd053.png",
+        "/uploads/projects/2ca7e723-32ad-4539-a35a-7d2e88c9f868.jpg",
+        "/uploads/projects/c3921e5c-3e33-4135-af13-a9324c336eff.jpg",
+        "/uploads/projects/5c7b19ef-c977-492c-aff6-9be9c3e931d2.png",
+        "/uploads/projects/e7189026-35ec-439a-b35c-db85de6cad00.png",
+        "/uploads/projects/f592ef9c-085a-4965-a6c9-0b7ae81335b0.png",
+        "/uploads/projects/7f10d5d8-22f4-4009-b70a-72ff805e7b2b.png"
+      ]
+    },
+    {
+      "slug": "renovation-and-maintenance-of-sheikh-mubarak-abdullah-almubarak-alsabah-mosque",
+      "titleEn": "Renovation and Maintenance of Sheikh Mubarak Abdullah AlMubarak AlSabah Mosque",
+      "titleAr": "تجديد وصيانة مسجد الشيخ مبارك عبدالله المبارك الصباح",
+      "clientEn": "Action Real Estate Company",
+      "clientAr": "شركة أكشن العقارية",
+      "categoryEn": "maintenance",
+      "categoryAr": "صيانة",
+      "locationEn": "Jahraa",
+      "locationAr": "الجهراء",
+      "year": "2022",
+      "amountKd": 350000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Renovation and Maintenance of Sheikh Mubarak Abdullah AlMubarak AlSabah Mosque",
+      "summaryAr": "تجديد وصيانة مسجد الشيخ مبارك عبدالله المبارك الصباح",
+      "detailsEn": "Renovation and Maintenance of Sheikh Mubarak Abdullah AlMubarak AlSabah Mosque",
+      "detailsAr": "تجديد وصيانة مسجد الشيخ مبارك عبدالله المبارك الصباح",
+      "scopeEn": [
+        "Civil works",
+        "Steel structures",
+        "External works",
+        "Safety systems"
+      ],
+      "scopeAr": [
+        "أعمال مدنية",
+        "هياكل حديدية",
+        "أعمال خارجية",
+        "أنظمة السلامة"
+      ],
+      "highlightsEn": [
+        "Optimized traffic flow",
+        "Durable floor finishes",
+        "HSE-focused site execution"
+      ],
+      "highlightsAr": [
+        "انسيابية حركة داخلية محسّنة",
+        "أرضيات عالية التحمل",
+        "تنفيذ ميداني وفق متطلبات السلامة"
+      ],
+      "heroImageUrl": "/uploads/projects/07aa2300-130c-4c84-803d-29ee9c13df93.png",
+      "galleryImageUrls": [
+        "/uploads/projects/b6b773ec-1ae6-4b25-a425-f64eab4417e3.png",
+        "/uploads/projects/42bfe291-a1dd-45fa-aed2-a2cf0bb8f4f1.png",
+        "/uploads/projects/cf41e129-ee37-4782-821b-703b9c711410.jpg",
+        "/uploads/projects/338fafb6-e8c0-4fc6-b072-db40d1f82986.jpg",
+        "/uploads/projects/d49870b8-30f7-4128-9e93-fa86b3ac8d17.jpg",
+        "/uploads/projects/b60f0ba9-b4b0-40b5-bf59-ff1d0e2b8b80.jpg",
+        "/uploads/projects/f83a802f-c115-4541-aab1-e4c138ad77ed.jpg",
+        "/uploads/projects/6abd9367-5893-47aa-b1a3-5d0d5a57bd3a.jpg",
+        "/uploads/projects/92e857b8-252b-487b-8cba-dafbb833a59a.jpg",
+        "/uploads/projects/fa25b2fd-e6f9-4d5e-99da-974d07c94ece.jpg",
+        "/uploads/projects/9aea7018-2fca-448b-8cc1-3f8101523ad7.jpg",
+        "/uploads/projects/3d2e149c-3167-410c-97c3-798c938c89c6.png",
+        "/uploads/projects/1cdc6713-1b94-4f7f-bdb8-39e786a0f5ea.png",
+        "/uploads/projects/d812ffa7-8106-438e-946a-a190c4236c80.png",
+        "/uploads/projects/3d668298-3bb6-49e3-976d-288c73d6626e.jpg",
+        "/uploads/projects/64c6f055-3d17-43e6-825f-4d81f711d23f.jpg",
+        "/uploads/projects/21670d2f-29ad-4f9f-887c-4c4f40d2166c.png",
+        "/uploads/projects/76af34a8-e669-4c36-995e-b88274ffef21.png",
+        "/uploads/projects/8afbc20a-9cca-4877-8250-e5c1c39c3b76.png",
+        "/uploads/projects/97e623f5-cdcc-4c9a-88a2-ea939fd63faf.jpg",
+        "/uploads/projects/d2251443-ceae-42d6-91fb-e2e63058ddea.jpg",
+        "/uploads/projects/163e7b8c-80c7-4025-8824-c4449d5938c5.jpg",
+        "/uploads/projects/38f54289-4150-45b7-9516-04280d146dcd.jpg",
+        "/uploads/projects/0a3aad32-5987-41a8-b883-88e341ffddac.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-commercial-building",
+      "titleEn": "Construction of commercial building",
+      "titleAr": "تشييد مبنى تجاري",
+      "clientEn": "Al Bahr National company",
+      "clientAr": "شركه البحر الوطني",
+      "categoryEn": "Skelton",
+      "categoryAr": "سكيلتون",
+      "locationEn": "Shuwaikh",
+      "locationAr": "الشويخ",
+      "year": "2022",
+      "amountKd": 145000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of commercial building",
+      "summaryAr": "تشييد مبنى تجاري",
+      "detailsEn": "Construction of commercial building",
+      "detailsAr": "تشييد مبنى تجاري",
+      "scopeEn": [
+        "Fit-out",
+        "MEP upgrades",
+        "Fire & life safety",
+        "Handover documentation"
+      ],
+      "scopeAr": [
+        "تشطيبات",
+        "ترقيات أنظمة الميكانيكا والكهرباء والسباكة",
+        "السلامة من الحريق",
+        "وثائق التسليم"
+      ],
+      "highlightsEn": [
+        "Night-shift work windows",
+        "Clean-site protocols",
+        "Commissioning and handover pack"
+      ],
+      "highlightsAr": [
+        "نوافذ عمل ليلية",
+        "إجراءات موقع نظيف",
+        "حزمة تشغيل وتسليم متكاملة"
+      ],
+      "heroImageUrl": "/uploads/projects/1bcf4a4b-2d11-4e00-a797-bd1906d74b51.png",
+      "galleryImageUrls": [
+        "/uploads/projects/edf62407-47c5-4f0d-8aa9-d57c93bd0a7e.png",
+        "/uploads/projects/a43812af-055d-4268-828f-9f9fa232f999.png",
+        "/uploads/projects/12f89ddb-c1c8-43b2-b997-f0a8a3f4662c.png"
+      ]
+    },
+    {
+      "slug": "construction-of-100-houses",
+      "titleEn": "Construction of 100 houses",
+      "titleAr": "بناء 100 منزل",
+      "clientEn": "PAHW",
+      "clientAr": "المؤسسة العامة للرعاية السكنية",
+      "categoryEn": "Skelton & Finishing",
+      "categoryAr": "الهيكل والتشطيب",
+      "locationEn": "Jahraa",
+      "locationAr": "الجهراء",
+      "year": "2021",
+      "amountKd": 2800000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of 100 houses",
+      "summaryAr": "بناء 100 منزل",
+      "detailsEn": "Construction of 100 houses",
+      "detailsAr": "بناء 100 منزل",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/451d5d07-9ec0-4faf-8aca-6cf33a857b36.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/53b7acd4-27b8-4736-af54-51ac282c8783.jpg",
+        "/uploads/projects/11cc53d8-1abc-47e9-8f33-11c897d64f11.jpg",
+        "/uploads/projects/4f13c0d7-2b62-442f-9832-28e32556fff1.jpg",
+        "/uploads/projects/402f57ed-4eae-4345-8380-056cda0d642e.jpg",
+        "/uploads/projects/08d5e9e7-0b1b-4ca6-8137-7b4570368cab.jpg",
+        "/uploads/projects/ecae857b-03c2-4e42-a634-f8b0cccadf27.jpg",
+        "/uploads/projects/fc2b0ff5-6417-4679-829b-2fd0d2ab693c.jpg",
+        "/uploads/projects/2ffe19a7-55df-4570-a9af-24450ed199f6.jpg",
+        "/uploads/projects/8cab9a5f-9758-48bf-b8b1-f6732d419799.jpg",
+        "/uploads/projects/2ca2faca-714b-4a5d-8b27-38d36d8287ca.jpg",
+        "/uploads/projects/0a150116-63b9-425f-b1a0-e2c645d9fb18.jpg",
+        "/uploads/projects/808b3302-ed21-4bc2-91fd-444780748f6f.jpg",
+        "/uploads/projects/794bba9f-c2b9-4dde-ac4f-88bb4efed969.jpg",
+        "/uploads/projects/7ee810d8-163b-4da9-bbe5-c497e14eedba.jpg",
+        "/uploads/projects/7d7071ac-3371-498b-8a98-660bdb140fff.jpg",
+        "/uploads/projects/cd9d4b6b-43ec-40a1-abd4-9b93d61b4d10.jpg",
+        "/uploads/projects/810b0be4-3547-4ed5-ab52-255600b8f915.jpg",
+        "/uploads/projects/3a352ca8-ab48-4e1d-91fa-19f043f13e20.jpg",
+        "/uploads/projects/78cd4dc6-ac22-465c-aca4-1c7b017a9ad4.jpg",
+        "/uploads/projects/644c2712-9eae-4891-93a7-3669337ef9be.jpg",
+        "/uploads/projects/7415a18b-873b-45f4-a7b3-c3cd0a2d0db2.jpg",
+        "/uploads/projects/adb5c6c1-c2ac-4c62-9d86-96b9b636b6ef.jpg",
+        "/uploads/projects/a284cc23-7a45-492a-b5cc-47b35764448c.jpg",
+        "/uploads/projects/5003f1a6-5ebe-4c91-9aa9-562e76735c4e.jpg",
+        "/uploads/projects/9ae6d8f2-cf28-4abf-b046-296e187e1461.jpg",
+        "/uploads/projects/13e250cd-6368-4332-8cce-a93ceb60cf2b.jpg",
+        "/uploads/projects/00ddc269-5e80-4a6d-8cf3-4f7570988b40.jpg",
+        "/uploads/projects/1a0e0225-17d9-4ea5-93cf-0c1aa4f7a26f.jpg",
+        "/uploads/projects/93de1683-a8e4-4c9c-bfea-b92f71504687.jpg",
+        "/uploads/projects/0d912c7c-87b2-4619-882f-aa0054228d8f.jpg",
+        "/uploads/projects/c6855bc1-dba7-4c40-8866-8063ef921b15.jpg",
+        "/uploads/projects/dc646d9b-87c6-4332-a76b-82a32b56d69b.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-bowling-car-park",
+      "titleEn": "Construction of Bowling Car Park",
+      "titleAr": "إنشاء موقف سيارات البولينج",
+      "clientEn": "PAYS",
+      "clientAr": "PAYS",
+      "categoryEn": "Skelton",
+      "categoryAr": "سكيلتون",
+      "locationEn": "Salmiya",
+      "locationAr": "السالمية",
+      "year": "2021",
+      "amountKd": 300000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Construction of Bowling Car Park",
+      "summaryAr": "إنشاء موقف سيارات البولينج",
+      "detailsEn": "Construction of Bowling Car Park",
+      "detailsAr": "إنشاء موقف سيارات البولينج",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/b3efe479-bc8a-43f6-8036-393434647ebc.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "construction-of-car-show-room",
+      "titleEn": "Construction of car show room",
+      "titleAr": "إنشاء صالة عرض سيارات",
+      "clientEn": "Aston Martin",
+      "clientAr": "أستون مارتن",
+      "categoryEn": "Category",
+      "categoryAr": "تصنيف",
+      "locationEn": "AL-Raii",
+      "locationAr": "الراعي",
+      "year": "2023",
+      "amountKd": 1000000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of car show room",
+      "summaryAr": "إنشاء صالة عرض سيارات",
+      "detailsEn": "Construction of car show room",
+      "detailsAr": "إنشاء صالة عرض سيارات",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/25705904-073d-4f5b-accb-63f6470f59eb.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/952251f7-534b-472b-87e9-94036b18ac6e.jpg",
+        "/uploads/projects/47a8387f-6b9b-4304-9d32-682bf0a01daa.jpg",
+        "/uploads/projects/91c4efea-1917-46bf-a1a1-e59dc60550e1.jpg",
+        "/uploads/projects/557ac6cd-3799-4e14-9ff7-0b8c3ee8222c.jpg",
+        "/uploads/projects/d7df3a04-3db4-4759-a08a-edf400498f83.jpg",
+        "/uploads/projects/1d18b4a0-ed83-4af5-853d-3276f6ab1d3f.jpg",
+        "/uploads/projects/e30446f8-3de0-4b71-8ab9-58e4c3a79b69.jpg",
+        "/uploads/projects/804e3167-56dd-4c73-9c62-cfd21932cba2.jpg",
+        "/uploads/projects/848fbdc6-3d49-4056-aa28-21e1807f171f.jpg",
+        "/uploads/projects/8ffde726-7ae6-4142-8011-433af57b011c.jpg",
+        "/uploads/projects/ae81ae8d-455a-4ad5-9471-e4eb7b71a487.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-industrial-building",
+      "titleEn": "Construction of Industrial Building",
+      "titleAr": "تشييد مبنى صناعي",
+      "clientEn": "Maghawy",
+      "clientAr": "مغاوي",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Al-Khiran",
+      "locationAr": "الخيران",
+      "year": "2025",
+      "amountKd": 250000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Construction of Industrial Building",
+      "summaryAr": "تشييد مبنى صناعي",
+      "detailsEn": "Construction of Industrial Building",
+      "detailsAr": "تشييد مبنى صناعي",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/5e344a53-4ff4-444e-ab15-5a5b28ace278.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "steel-structure",
+      "titleEn": "Steel Structure",
+      "titleAr": "الهيكل الصلب",
+      "clientEn": "KOC",
+      "clientAr": "شركة نفط الكويت",
+      "categoryEn": "Supply & Install",
+      "categoryAr": "توريد وتركيب",
+      "locationEn": "Ahmadi",
+      "locationAr": "الاحمدي",
+      "year": "2025",
+      "amountKd": 100000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Steel Structure",
+      "summaryAr": "الهيكل الصلب",
+      "detailsEn": "Steel Structure",
+      "detailsAr": "الهيكل الصلب",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/placeholder.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "construction-of-residential-villa",
+      "titleEn": "Construction of Residential Villa",
+      "titleAr": "بناء فيلا سكنية",
+      "clientEn": "Mr. Faisal Al Awady",
+      "clientAr": "السيد فيصل العوضي",
+      "categoryEn": "Turn Key ",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Al-Khiran",
+      "locationAr": "الخيران",
+      "year": "2020",
+      "amountKd": 188000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of Residential Villa",
+      "summaryAr": "بناء فيلا سكنية",
+      "detailsEn": "Construction of Residential Villa",
+      "detailsAr": "بناء فيلا سكنية",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/b956bd7d-c3a3-471d-b902-db925f5bf9bb.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/0e85cbaf-f042-497a-8d43-838fc94c7747.jpg",
+        "/uploads/projects/ee9fa9c9-52ba-4dd6-8d20-dc53c1f338b2.jpg",
+        "/uploads/projects/6aa5575a-5e42-40e5-9817-622a3fd1f3ad.jpg",
+        "/uploads/projects/7fcdde16-a327-4b44-b711-d1714799e379.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-primary-school",
+      "titleEn": "Construction of primary school",
+      "titleAr": "بناء المدرسة الابتدائية",
+      "clientEn": "MOD",
+      "clientAr": "وزارة الدفاع",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Ishbylia",
+      "locationAr": "اشبيلية",
+      "year": "2020",
+      "amountKd": 2500000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of primary school",
+      "summaryAr": "بناء المدرسة الابتدائية",
+      "detailsEn": "Construction of primary school",
+      "detailsAr": "بناء المدرسة الابتدائية",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/e6b617e7-46d9-44ef-a3ac-3a412eaec3bb.png",
+      "galleryImageUrls": [
+        "/uploads/projects/893138fb-8205-4724-a619-6342d143f450.png"
+      ]
+    },
+    {
+      "slug": "renovation-of-5-co-operative-branches",
+      "titleEn": "Renovation of 5 Co-operative Branches",
+      "titleAr": "تجديد 5 فروع تعاونية",
+      "clientEn": "AL- Nassim Co-operative Society",
+      "clientAr": "جمعية النسيم التعاونية",
+      "categoryEn": "Finishing Items",
+      "categoryAr": "عناصر التشطيب",
+      "locationEn": "Jahraa",
+      "locationAr": "الجهراء",
+      "year": "2020",
+      "amountKd": 250000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Renovation of 5 Co-operative Branches",
+      "summaryAr": "تجديد 5 فروع تعاونية",
+      "detailsEn": "Renovation of 5 Co-operative Branches",
+      "detailsAr": "تجديد 5 فروع تعاونية",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/dbe5cb2c-1669-4090-b5cb-6ceec4e479ee.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/80df39cb-aca7-4956-82ff-b315048bfbc9.jpg",
+        "/uploads/projects/d9a69708-6887-425f-8f6e-5d1d6575e6c6.jpg",
+        "/uploads/projects/fecdda85-6289-441c-bfee-f80694770d31.jpg",
+        "/uploads/projects/65181d4b-66b3-4290-b8a1-9188ea71c41a.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-residential-building",
+      "titleEn": "Construction of Residential Building",
+      "titleAr": "تشييد مبنى سكني",
+      "clientEn": "American school",
+      "clientAr": "المدرسة الأمريكية",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Mahboula",
+      "locationAr": "المهبولة",
+      "year": "2020",
+      "amountKd": 2000000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of Residential Building",
+      "summaryAr": "تشييد مبنى سكني",
+      "detailsEn": "Construction of Residential Building",
+      "detailsAr": "تشييد مبنى سكني",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/ab7b073b-8380-4488-a1ea-3d98e73c8a4d.png",
+      "galleryImageUrls": [
+        "/uploads/projects/647fd699-46cd-4950-8121-a59cbeb9e705.png"
+      ]
+    },
+    {
+      "slug": "construction-of-residential-villa-2",
+      "titleEn": "Construction of Residential Villa",
+      "titleAr": "بناء فيلا سكنية",
+      "clientEn": "Mr. Reda Nasib",
+      "clientAr": "السيد رضا نسيب",
+      "categoryEn": "Concrete works",
+      "categoryAr": "الأعمال الخرسانية",
+      "locationEn": "Al-Khiran",
+      "locationAr": "الخيران",
+      "year": "2021",
+      "amountKd": 60000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Construction of Residential Villa",
+      "summaryAr": "بناء فيلا سكنية",
+      "detailsEn": "Construction of Residential Villa",
+      "detailsAr": "بناء فيلا سكنية",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/035d5a7d-fc23-4e24-a593-d266c15dd78d.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "construction-of-residential-building-2",
+      "titleEn": "Construction of Residential Building",
+      "titleAr": "بناء مبنى سكني",
+      "clientEn": "MOA",
+      "clientAr": "وزارة الزراعة",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Hawally",
+      "locationAr": "حولي",
+      "year": "2022",
+      "amountKd": 1000000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of Residential Building",
+      "summaryAr": "بناء مبنى سكني",
+      "detailsEn": "Construction of Residential Building",
+      "detailsAr": "بناء مبنى سكني",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/6c318d6c-1156-4491-a014-f911edede094.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/40f03001-3a3d-46a8-959c-5faa965d8731.jpg",
+        "/uploads/projects/705d5466-a197-4ce5-8796-152a56b8c43b.jpg",
+        "/uploads/projects/783661ac-93d3-4594-b2a2-e20469e6d19e.jpg",
+        "/uploads/projects/c0123ef2-609c-4392-89e9-018ddd82b11a.jpg",
+        "/uploads/projects/bca6dd06-6e82-435e-a8c5-30205495e094.jpg"
+      ]
+    },
+    {
+      "slug": "construction-of-co-operative-branch",
+      "titleEn": "Construction of Co-operative Branch",
+      "titleAr": "إنشاء فرع تعاوني",
+      "clientEn": "AL- Nassim Co-operative Society",
+      "clientAr": "جمعية النسيم التعاونية",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "Jahraa",
+      "locationAr": "الجهراء",
+      "year": "2021",
+      "amountKd": 100000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of Co-operative Branch",
+      "summaryAr": "إنشاء فرع تعاوني",
+      "detailsEn": "Construction of Co-operative Branch",
+      "detailsAr": "إنشاء فرع تعاوني",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/39195532-e6fc-4291-a365-0499f2225ea8.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/62b3c58f-1495-4dbc-a7cb-041e69148732.jpg",
+        "/uploads/projects/4030386c-a43b-4f5a-932f-6d3878d659db.jpg",
+        "/uploads/projects/849cd8c2-41a0-482e-a678-ba1d10f6af89.jpg",
+        "/uploads/projects/4dea7741-694b-4582-816f-a087ead88d63.jpg"
+      ]
+    },
+    {
+      "slug": "supply-install-of-porta-cabins",
+      "titleEn": "Supply &Install of Porta- Cabins",
+      "titleAr": "توريد وتركيب كبائن متنقلة",
+      "clientEn": "KNPC",
+      "clientAr": "شركة البترول الوطنية الكويتية",
+      "categoryEn": "Steel structure",
+      "categoryAr": "الهيكل الصلب",
+      "locationEn": "New Refinery",
+      "locationAr": "مصفاة جديدة",
+      "year": "2021",
+      "amountKd": 500000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Supply &Install of Porta- Cabins",
+      "summaryAr": "توريد وتركيب كبائن متنقلة",
+      "detailsEn": "Supply &Install of Porta- Cabins",
+      "detailsAr": "توريد وتركيب كبائن متنقلة",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/placeholder.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "supply-install-of-porta-cabins-2",
+      "titleEn": "Supply &Install of Porta- Cabins",
+      "titleAr": "توريد وتركيب كبائن متنقلة",
+      "clientEn": "KOC",
+      "clientAr": "شركة نفط الكويت",
+      "categoryEn": "Supply ",
+      "categoryAr": "توريد ",
+      "locationEn": "Ahmadi",
+      "locationAr": "الاحمدي",
+      "year": "2021",
+      "amountKd": 250000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "Supply &Install of Porta- Cabins",
+      "summaryAr": "توريد وتركيب كبائن متنقلة",
+      "detailsEn": "Supply &Install of Porta- Cabins",
+      "detailsAr": "توريد وتركيب كبائن متنقلة",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/placeholder.jpg",
+      "galleryImageUrls": []
+    },
+    {
+      "slug": "construction-of-commercial-building-2",
+      "titleEn": "construction of commercial building",
+      "titleAr": "تشييد مبنى تجاري",
+      "clientEn": "Maghawy",
+      "clientAr": "مغاوي",
+      "categoryEn": "Turn Key",
+      "categoryAr": "تشغيل المفتاح",
+      "locationEn": "AL-Raii",
+      "locationAr": "الراعي",
+      "year": "2022",
+      "amountKd": 800000,
+      "statusEn": "completed",
+      "statusAr": "مكتمل",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": false,
+      "summaryEn": "",
+      "summaryAr": "",
+      "detailsEn": "",
+      "detailsAr": "",
+      "scopeEn": [],
+      "scopeAr": [],
+      "highlightsEn": [],
+      "highlightsAr": [],
+      "heroImageUrl": "/placeholder.jpg",
+      "galleryImageUrls": []
+    }
+  ],
+  "careers": {
+    "applyEmail": "careers@nationalorascom.com",
+    "jobs": [
+      {
+        "slug": "project-engineer",
+        "titleEn": "Project Engineer",
+        "titleAr": "مهندس مشروع",
+        "locationEn": "On-site",
+        "locationAr": "في الموقع",
+        "typeEn": "Full-time",
+        "typeAr": "دوام كامل",
+        "summaryEn": "Support project delivery across planning, coordination, and site execution.",
+        "summaryAr": "دعم تنفيذ المشاريع عبر التخطيط والتنسيق وإدارة الأعمال الميدانية.",
+        "responsibilitiesEn": [
+          "Coordinate with site teams, subcontractors, and suppliers.",
+          "Track progress against schedule and raise risks early.",
+          "Prepare RFIs, method statements, and daily reports."
+        ],
+        "responsibilitiesAr": [
+          "التنسيق مع فرق الموقع والمقاولين الفرعيين والموردين.",
+          "متابعة تقدم الأعمال مقارنة بالبرنامج وإدارة المخاطر مبكراً.",
+          "إعداد طلبات الاستفسار وخطط العمل والتقارير اليومية."
+        ],
+        "requirementsEn": [
+          "Bachelor’s degree in Civil/Mechanical/Electrical Engineering.",
+          "Strong communication and documentation skills.",
+          "Experience in construction projects preferred."
+        ],
+        "requirementsAr": [
+          "درجة بكالوريوس في الهندسة المدنية/الميكانيكية/الكهربائية.",
+          "مهارات تواصل وتوثيق قوية.",
+          "يفضل وجود خبرة سابقة في مشاريع البناء."
+        ]
+      },
+      {
+        "slug": "site-supervisor",
+        "titleEn": "Site Supervisor",
+        "titleAr": "مشرف موقع",
+        "locationEn": "On-site",
+        "locationAr": "في الموقع",
+        "typeEn": "Full-time",
+        "typeAr": "دوام كامل",
+        "summaryEn": "Lead day-to-day site activities with a focus on safety, quality, and productivity.",
+        "summaryAr": "قيادة الأعمال اليومية في الموقع مع التركيز على السلامة والجودة والإنتاجية.",
+        "responsibilitiesEn": [
+          "Supervise workmanship and ensure compliance with drawings/specs.",
+          "Coordinate daily tasks and manage site logistics.",
+          "Enforce HSE rules and report incidents/near misses."
+        ],
+        "responsibilitiesAr": [
+          "الإشراف على جودة التنفيذ والالتزام بالمخططات والمواصفات.",
+          "تنسيق مهام اليوم وإدارة لوجستيات الموقع.",
+          "تطبيق قواعد السلامة والإبلاغ عن الحوادث والملاحظات."
+        ],
+        "requirementsEn": [
+          "5+ years of experience in construction supervision.",
+          "Ability to read drawings and coordinate trades.",
+          "Strong leadership and reporting skills."
+        ],
+        "requirementsAr": [
+          "خبرة 5 سنوات أو أكثر في الإشراف بالمشاريع.",
+          "القدرة على قراءة المخططات وتنسيق الأعمال.",
+          "مهارات قيادة وإعداد تقارير قوية."
+        ]
+      },
+      {
+        "slug": "quantity-surveyor",
+        "titleEn": "Quantity Surveyor",
+        "titleAr": "حاسب كميات",
+        "locationEn": "Office / Site",
+        "locationAr": "المكتب / الموقع",
+        "typeEn": "Full-time",
+        "typeAr": "دوام كامل",
+        "summaryEn": "Manage measurements, cost tracking, and subcontractor valuations.",
+        "summaryAr": "إدارة القياسات وتتبع التكاليف واعتمادات المقاولين الفرعيين.",
+        "responsibilitiesEn": [
+          "Prepare BOQs, take-offs, and interim valuations.",
+          "Support cost reporting and change management.",
+          "Coordinate with procurement and project teams."
+        ],
+        "responsibilitiesAr": [
+          "إعداد جداول الكميات والحصر واعتمادات الدفعات.",
+          "دعم تقارير التكاليف وإدارة التغييرات.",
+          "التنسيق مع المشتريات وفرق المشاريع."
+        ],
+        "requirementsEn": [
+          "Bachelor’s degree in Quantity Surveying/Civil Engineering or equivalent.",
+          "Strong Excel and reporting skills.",
+          "Experience with claims/variations is a plus."
+        ],
+        "requirementsAr": [
+          "درجة بكالوريوس في هندسة/حاسب كميات أو ما يعادلها.",
+          "مهارات قوية في Excel وإعداد التقارير.",
+          "يفضل وجود خبرة في المطالبات والتغييرات."
+        ]
+      },
+      {
+        "slug": "hse-officer",
+        "titleEn": "HSE Officer",
+        "titleAr": "مسؤول سلامة (HSE)",
+        "locationEn": "On-site",
+        "locationAr": "في الموقع",
+        "typeEn": "Full-time",
+        "typeAr": "دوام كامل",
+        "summaryEn": "Drive a safety-first culture across site operations and audits.",
+        "summaryAr": "تعزيز ثقافة السلامة عبر أعمال الموقع والتفتيش والتدقيق.",
+        "responsibilitiesEn": [
+          "Conduct toolbox talks, inspections, and audits.",
+          "Support risk assessments and method statement reviews.",
+          "Maintain safety records and HSE reporting."
+        ],
+        "responsibilitiesAr": [
+          "تنفيذ اجتماعات السلامة اليومية والتفتيش والتدقيق.",
+          "دعم تقييم المخاطر ومراجعة خطط العمل.",
+          "إدارة سجلات السلامة والتقارير الخاصة بها."
+        ],
+        "requirementsEn": [
+          "NEBOSH/IOSH or equivalent certification preferred.",
+          "Experience in construction HSE required.",
+          "Strong communication and training skills."
+        ],
+        "requirementsAr": [
+          "يفضل الحصول على شهادات NEBOSH/IOSH أو ما يعادلها.",
+          "خبرة مطلوبة في سلامة مواقع البناء.",
+          "مهارات تواصل وتدريب قوية."
+        ]
+      }
+    ]
+  },
+  "policies": {
+    "intro": {
+      "en": "National Orascom is committed to protecting health, safety, and the environment. We work proactively with employees, clients, suppliers, and relevant authorities to maintain high standards across all project activities.",
+      "ar": "تلتزم ناشونال أوراسكوم بحماية الصحة والسلامة والبيئة. ونعمل بشكل استباقي مع الموظفين والعملاء والموردين والجهات ذات العلاقة للحفاظ على أعلى المعايير في جميع أعمال المشروع."
+    },
+    "commitmentsEn": [
+      "Build a safety-first culture on every site.",
+      "Follow approved procedures, method statements, and permits.",
+      "Wear required PPE and maintain good housekeeping to prevent incidents.",
+      "Report hazards, near misses, and incidents promptly and transparently.",
+      "Support onboarding and training for new team members and visitors.",
+      "Protect the environment through responsible waste management and spill prevention.",
+      "Comply with applicable HSE legislation and client site rules.",
+      "Maintain documented QA/QC checkpoints aligned with project requirements."
+    ],
+    "commitmentsAr": [
+      "ترسيخ ثقافة السلامة أولاً في جميع المواقع.",
+      "اتباع الإجراءات وخطط العمل والتصاريح المعتمدة.",
+      "ارتداء معدات الوقاية الشخصية المطلوبة والحفاظ على نظافة الموقع لمنع الحوادث.",
+      "الإبلاغ عن المخاطر والملاحظات والحوادث بسرعة وشفافية.",
+      "دعم التهيئة والتدريب للأعضاء الجدد والزوار.",
+      "حماية البيئة عبر إدارة النفايات ومنع الانسكابات.",
+      "الالتزام بالتشريعات ذات الصلة وقواعد السلامة لدى العملاء.",
+      "تطبيق نقاط QA/QC موثقة بما يتوافق مع متطلبات المشروع."
+    ]
+  }
+}

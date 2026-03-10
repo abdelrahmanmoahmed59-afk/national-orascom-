@@ -26,7 +26,10 @@ Thumbs.db
 
 # Runtime content (recommended to keep out of git)
 data/*.json
+!data/site-content.json
 public/uploads/
+!public/uploads/
+!public/uploads/**
 
 # Local backups (do not commit)
 runtime-backup*.zip
