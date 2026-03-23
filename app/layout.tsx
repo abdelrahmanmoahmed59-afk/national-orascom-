@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Cairo } from "next/font/google"
+import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Sans_Arabic } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/i18n/language-context"
 import { ThemeProvider } from "@/lib/theme-context"
@@ -11,9 +11,22 @@ import { AppChrome } from "@/components/app-chrome"
 import "./globals.css"
 import { unstable_noStore as noStore } from "next/cache"
 
-const cairo = Cairo({
-  subsets: ["latin", "arabic"],
-  variable: "--font-cairo",
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
+})
+
+const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans-arabic",
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-ibm-plex-mono",
 })
 
 export const metadata: Metadata = {
@@ -54,7 +67,11 @@ export default async function RootLayout({
   const siteContent = await readSiteContent()
 
   return (
-    <html lang="en" suppressHydrationWarning className={cairo.variable}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${ibmPlexSans.variable} ${ibmPlexSansArabic.variable} ${ibmPlexMono.variable}`}
+    >
       <body className="font-sans antialiased">
         <ThemeProvider>
           <LanguageProvider>

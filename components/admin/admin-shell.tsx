@@ -48,20 +48,20 @@ export function AdminShell({
     <div dir={dir} className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/admin" className="group flex items-center gap-4 min-w-0">
-            <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_14px_40px_rgba(15,15,15,0.10)]">
+          <Link href="/admin" className="group flex items-center gap-2.5 min-w-0">
+            <span className="inline-flex h-14 w-[84px] shrink-0 items-center justify-center overflow-visible">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={branding?.logo.src ?? "/placeholder-logo.svg"}
                 alt={branding?.logo.alt?.[language] ?? "Logo"}
-                className="h-12 w-12 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_4px_10px_rgba(0,0,0,0.18)]"
+                className="max-h-11 w-full max-w-[80px] scale-[1.06] object-contain brightness-[1.06] contrast-[1.12] saturate-[1.04]"
               />
             </span>
-            <div className="leading-tight min-w-0">
-              <div className="font-serif text-xl font-semibold tracking-tight truncate">
+            <div className="min-w-0 space-y-0.5 leading-none">
+              <div className="font-serif text-lg font-extrabold tracking-[-0.035em] truncate sm:text-[1.18rem]">
                 {branding?.companyName?.[language] ?? "Admin Dashboard"}
               </div>
-              <div className="hidden sm:block text-[10px] tracking-[0.25em] uppercase text-muted-foreground truncate">
+              <div className="hidden sm:block text-[9px] font-bold not-italic tracking-[0.18em] uppercase text-muted-foreground/90 truncate">
                 {branding?.tagline?.[language] ?? (language === "en" ? "Content Management" : "إدارة المحتوى")}
               </div>
             </div>

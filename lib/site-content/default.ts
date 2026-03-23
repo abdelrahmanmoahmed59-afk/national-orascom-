@@ -8,7 +8,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
     companyName: { en: "National Orascom", ar: "ناشونال أوراسكوم" },
     tagline: { en: "Construction & Contracting", ar: "البناء والمقاولات" },
     logo: {
-      src: "/logo%20national%20orascom%20company.png",
+      src: "/logo_national_orascom_company-removebg-preview.png",
       alt: { en: "National Orascom", ar: "ناشونال أوراسكوم" },
     },
     favicon: {

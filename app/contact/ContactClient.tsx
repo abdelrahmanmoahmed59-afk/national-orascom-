@@ -20,14 +20,14 @@ export default function ContactClient({ contact }: { contact: SiteContent["conta
               </p>
             </AnimatedSection>
             <AnimatedSection animation="reveal-up" delay={100}>
-              <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[0.95]">
+              <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl leading-[0.95]">
                 {language === "en" ? (
                   "Get In Touch"
                 ) : (
                   <>
                     لنبدأ
                     <br />
-                    <span className="italic font-normal">محادثة</span>
+                    <span className="font-medium">محادثة</span>
                   </>
                 )}
               </h1>

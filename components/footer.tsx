@@ -86,18 +86,10 @@ export function Footer({
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-4 space-y-6">
-            <Link href="/" className="inline-flex items-center gap-4">
-              <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-background/45 bg-background/95 shadow-[0_14px_40px_rgba(0,0,0,0.22)]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={branding.logo.src}
-                  alt={branding.logo.alt[language]}
-                  className="h-11 w-11 object-contain brightness-[1.03] contrast-[1.2] saturate-[1.18] drop-shadow-[0_4px_10px_rgba(0,0,0,0.24)]"
-                />
-              </span>
-              <div className="leading-tight">
-                <div className="font-serif text-2xl font-semibold tracking-tight text-background">{branding.companyName[language]}</div>
-                <div className="text-[10px] tracking-[0.25em] uppercase text-background/60">
+            <Link href="/" className="inline-block">
+              <div className="space-y-0.5 leading-none">
+                <div className="font-serif text-[1.65rem] font-extrabold tracking-[-0.035em] text-background">{branding.companyName[language]}</div>
+                <div className="text-[9px] font-bold not-italic tracking-[0.18em] uppercase text-background/60">
                   {branding.tagline[language]}
                 </div>
               </div>

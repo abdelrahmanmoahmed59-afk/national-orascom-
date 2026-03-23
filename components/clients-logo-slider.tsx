@@ -17,11 +17,16 @@ export function ClientsLogoSlider({
   const { language, dir } = useLanguage()
 
   const items = useMemo(() => (clients || []).filter((c) => c.logoSrc), [clients])
-  const duplicated = useMemo(() => {
+  const cycleItems = useMemo(() => {
     if (items.length === 0) return []
-    const copies = items.length < 8 ? 3 : 2
-    return Array.from({ length: copies }, () => items).flat()
+    const minItemsPerCycle = 8
+    const repeatCount = Math.max(1, Math.ceil(minItemsPerCycle / items.length))
+    return Array.from({ length: repeatCount }, () => items).flat()
   }, [items])
+  const duplicated = useMemo(() => {
+    if (cycleItems.length === 0) return []
+    return [...cycleItems, ...cycleItems]
+  }, [cycleItems])
 
   if (items.length === 0) return null
 
@@ -29,6 +34,7 @@ export function ClientsLogoSlider({
 
   return (
     <div
+      dir="ltr"
       className={cn(
         "group relative overflow-hidden border border-border/60 bg-background/50",
         "motion-reduce:overflow-x-auto motion-reduce:overscroll-x-contain",
@@ -41,7 +47,7 @@ export function ClientsLogoSlider({
 
       <div
         className={cn(
-          "flex w-max items-center gap-6 py-8 px-6",
+          "flex w-max min-w-max items-center justify-start gap-6 py-8 px-6",
           trackClass,
           "motion-reduce:animate-none",
           "group-hover:[animation-play-state:paused]",

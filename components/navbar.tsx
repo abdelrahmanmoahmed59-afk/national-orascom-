@@ -101,18 +101,18 @@ export function Navbar({
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-4">
-              <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_14px_40px_rgba(15,15,15,0.10)]">
+            <Link href="/" className="group flex items-center gap-2.5 sm:gap-3">
+              <span className="inline-flex h-14 w-[84px] shrink-0 items-center justify-center overflow-visible sm:h-16 sm:w-[96px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={branding.logo.src}
                   alt={branding.logo.alt[language]}
-                  className="h-12 w-12 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_4px_10px_rgba(0,0,0,0.18)]"
+                  className="max-h-11 w-full max-w-[80px] scale-[1.06] object-contain brightness-[1.06] contrast-[1.12] saturate-[1.04] sm:max-h-12 sm:max-w-[92px]"
                 />
               </span>
-              <div className="leading-tight">
-                <div className="font-serif text-xl font-semibold tracking-tight">{branding.companyName[language]}</div>
-                <div className="hidden sm:block text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
+              <div className="min-w-0 space-y-0.5 leading-none">
+                <div className="font-serif text-lg font-extrabold tracking-[-0.035em] sm:text-[1.22rem]">{branding.companyName[language]}</div>
+                <div className="hidden sm:block text-[9px] font-bold not-italic tracking-[0.18em] uppercase text-muted-foreground/90">
                   {branding.tagline[language]}
                 </div>
               </div>

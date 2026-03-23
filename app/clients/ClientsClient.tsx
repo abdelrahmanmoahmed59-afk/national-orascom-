@@ -31,13 +31,13 @@ export default function ClientsClient({ clients }: { clients: SiteContent["clien
                   <>
                     Our
                     <br />
-                    <span className="italic font-normal">{title}</span>
+                    <span className="font-medium">{title}</span>
                   </>
                 ) : (
                   <>
                     {title}
                     <br />
-                    <span className="italic font-normal">{language === "ar" ? "شركاؤنا" : ""}</span>
+                    <span className="font-medium">{language === "ar" ? "شركاؤنا" : ""}</span>
                   </>
                 )}
               </h1>
@@ -62,7 +62,7 @@ export default function ClientsClient({ clients }: { clients: SiteContent["clien
             <Button asChild variant="outline" size="lg" className="rounded-none px-8 h-14 bg-transparent">
               <Link href="/contact">
                 {language === "en" ? "Work with us" : "اعمل معنا"}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className={dir === "rtl" ? "mr-2 h-4 w-4 rotate-180" : "ml-2 h-4 w-4"} />
               </Link>
             </Button>
           </AnimatedSection>

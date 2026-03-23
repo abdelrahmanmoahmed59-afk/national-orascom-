@@ -35,16 +35,12 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
             <AnimatedSection animation="reveal-up" delay={100}>
               <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[0.95]">
                 {language === "en" ? (
-                  <>
-                    Projects that
-                    <br />
-                    <span className="italic font-normal">deliver</span>
-                  </>
+                  <>Our Projects</>
                 ) : (
                   <>
                     مشاريع
                     <br />
-                    <span className="italic font-normal">تنجز</span>
+                    <span className="font-medium">تنجز</span>
                   </>
                 )}
               </h1>

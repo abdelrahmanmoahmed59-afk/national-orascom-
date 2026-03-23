@@ -10,7 +10,7 @@
       "ar": "البناء والمقاولات"
     },
     "logo": {
-      "src": "/logo%20national%20orascom%20company.png",
+      "src": "/logo_national_orascom_company-removebg-preview.png",
       "alt": {
         "en": "National Orascom",
         "ar": "ناشونال أوراسكوم"
@@ -289,6 +289,90 @@
       "descAr": "نلتزم بالنتائج — الوقت والتكلفة والجودة — بتقارير واضحة."
     }
   ],
+  "aboutCoreValues": {
+    "titleEn": "Our Core Values",
+    "titleAr": "قيمنا الأساسية",
+    "items": [
+      {
+        "id": "core-value-competent",
+        "labelEn": "Competent",
+        "labelAr": "الكفاءة",
+        "imageUrl": "/values/website-icons1.png",
+        "statementEn": "We are very good at what we do.",
+        "statementAr": "نحن متمكنون جداً فيما نقوم به.",
+        "introEn": "We possess the skills and ability to do what you are currently doing or propose to do.",
+        "introAr": "نمتلك المهارات والقدرة على تنفيذ ما تقومون به حالياً أو ما تقترحون تنفيذه.",
+        "pointsEn": [
+          "Performing consistently to the satisfaction of others against agreed upon standards.",
+          "Developing and supporting others where that is part of your role, seniority, and ability.",
+          "Knowing where you are competent and openly saying \"I don't know\" if appropriate."
+        ],
+        "pointsAr": [
+          "ننجز أعمالنا باستمرار بما يحقق رضا الآخرين وفق المعايير المتفق عليها.",
+          "نطور الآخرين وندعمهم عندما يكون ذلك جزءاً من دورنا وخبرتنا وقدرتنا.",
+          "نعرف حدود كفاءتنا ونقول بصراحة \"لا أعرف\" عندما يكون ذلك مناسباً."
+        ]
+      },
+      {
+        "id": "core-value-reliable",
+        "labelEn": "Reliable",
+        "labelAr": "الاعتمادية",
+        "imageUrl": "/values/website-icons21.png",
+        "statementEn": "We follow through on our commitments.",
+        "statementAr": "نفي بالتزاماتنا.",
+        "introEn": "We meet the commitments we make and keep our promises.",
+        "introAr": "نلتزم بما نعد به ونحافظ على وعودنا.",
+        "pointsEn": [
+          "Being on time for scheduled meetings and deliverables.",
+          "Doing what you say you will do by the promised deadline. If for some reason completion is at risk, others are notified prior to the due date/time."
+        ],
+        "pointsAr": [
+          "نلتزم بالمواعيد في الاجتماعات والتسليمات المجدولة.",
+          "نقوم بما نقول إننا سنفعله ضمن الموعد الموعود. وإذا أصبح الإكمال معرضاً للخطر لأي سبب، نبلغ الآخرين قبل موعد الاستحقاق."
+        ]
+      },
+      {
+        "id": "core-value-sincere",
+        "labelEn": "Sincere",
+        "labelAr": "الصدق",
+        "imageUrl": "/values/website-icons31.png",
+        "statementEn": "We mean what we say.",
+        "statementAr": "نقول ما نعنيه ونعني ما نقوله.",
+        "introEn": "We are honest. We say what we mean and mean what we say.",
+        "introAr": "نحن صادقون. نقول ما نعنيه ونعني ما نقوله.",
+        "pointsEn": [
+          "Raising concerns or offering feedback immediately. While valuing candor, openness, and transparency over conflict avoidance, but in a respectful manner.",
+          "Bringing \"background conversations\" (what you are thinking) to the \"foreground\" (what you say out loud) tactfully so you are in genuine alignment with the team.",
+          "Listening to the views or concerns of others and repeating them back so they are clearly heard and understood."
+        ],
+        "pointsAr": [
+          "نطرح المخاوف أو الملاحظات فوراً، مع تفضيل الصراحة والانفتاح والشفافية على تجنب الخلاف، ولكن بأسلوب محترم.",
+          "ننقل \"الأحاديث الخلفية\"، أي ما نفكر فيه، إلى \"الواجهة\"، أي ما نقوله بصوت واضح، بلباقة حتى نكون على انسجام حقيقي مع الفريق.",
+          "نستمع إلى آراء الآخرين أو مخاوفهم ونكررها لهم حتى نتأكد من أنهم سُمِعوا وفُهِموا بوضوح."
+        ]
+      },
+      {
+        "id": "core-value-care",
+        "labelEn": "Care",
+        "labelAr": "الاهتمام",
+        "imageUrl": "/values/website-icons41.png",
+        "statementEn": "We have a genuine desire to meet the needs of people.",
+        "statementAr": "لدينا رغبة حقيقية في تلبية احتياجات الناس.",
+        "introEn": "We have the other's interests in mind as well as our own when we make decisions and take actions.",
+        "introAr": "نضع مصلحة الآخرين في اعتبارنا إلى جانب مصلحتنا عند اتخاذ القرارات وتنفيذ الإجراءات.",
+        "pointsEn": [
+          "Asking for feedback on your relationships to ensure collaboration and teamwork with others.",
+          "Building supportive and diverse teams that create stronger future promotion opportunities.",
+          "Going out of your way to lift others up and help teammates who might be struggling."
+        ],
+        "pointsAr": [
+          "نطلب الملاحظات حول علاقاتنا لضمان التعاون والعمل الجماعي مع الآخرين.",
+          "نبني فرقاً داعمة ومتنوعة تصنع فرصاً أقوى للنمو والترقي مستقبلاً.",
+          "نبذل جهداً إضافياً لرفع معنويات الآخرين ومساعدة الزملاء الذين قد يواجهون صعوبة."
+        ]
+      }
+    ]
+  },
   "aboutMilestones": [
     {
       "year": "2012",
@@ -367,6 +451,188 @@
       "imageUrl": "/safety-equipment-helmets-and-gear.jpg"
     }
   ],
+  "servicesFeaturePanels": [
+    {
+      "id": "service-panel-01",
+      "number": "01",
+      "titleEn": "General Construction & Allied Services",
+      "titleAr": "المقاولات العامة والخدمات المساندة",
+      "descriptionEn": "Integrated construction delivery for buildings, fit-out packages, and support trades managed under one coordinated team.",
+      "descriptionAr": "تنفيذ إنشائي متكامل للمباني وحزم التشطيبات والأعمال المساندة ضمن فريق واحد منسق.",
+      "offersEn": [
+        "Main contracting and site execution",
+        "Structural, finishing, and allied trade packages",
+        "MEP coordination and handover support",
+        "Quality, safety, and schedule control"
+      ],
+      "offersAr": [
+        "أعمال المقاولات الرئيسية والتنفيذ بالموقع",
+        "الحزم الإنشائية والتشطيبات والأعمال المساندة",
+        "تنسيق أعمال الـ MEP ودعم التسليم",
+        "ضبط الجودة والسلامة والبرنامج الزمني"
+      ]
+    },
+    {
+      "id": "service-panel-02",
+      "number": "02",
+      "titleEn": "Construction Cost Consultancy",
+      "titleAr": "استشارات التكاليف الإنشائية",
+      "descriptionEn": "Commercial guidance that helps clients understand budgets early, compare options, and keep construction costs under control.",
+      "descriptionAr": "إرشاد تجاري يساعد العملاء على فهم الميزانيات مبكراً ومقارنة الخيارات وضبط التكاليف الإنشائية.",
+      "offersEn": [
+        "Preliminary cost planning and benchmarking",
+        "Bill of quantities and tender reviews",
+        "Value engineering recommendations",
+        "Budget tracking across project stages"
+      ],
+      "offersAr": [
+        "التخطيط المبدئي للتكاليف والمقارنة المرجعية",
+        "مراجعة جداول الكميات والعطاءات",
+        "توصيات هندسة القيمة",
+        "متابعة الميزانية عبر مراحل المشروع"
+      ]
+    },
+    {
+      "id": "service-panel-03",
+      "number": "03",
+      "titleEn": "Project Management",
+      "titleAr": "إدارة المشاريع",
+      "descriptionEn": "Structured project leadership from kickoff to closeout with clear reporting, risk control, and stakeholder coordination.",
+      "descriptionAr": "قيادة منظمة للمشروع من البداية حتى الإغلاق مع تقارير واضحة وضبط للمخاطر وتنسيق بين جميع الأطراف.",
+      "offersEn": [
+        "Program planning and milestone control",
+        "Consultant and contractor coordination",
+        "Progress reporting and issue escalation",
+        "Risk, quality, and procurement oversight"
+      ],
+      "offersAr": [
+        "تخطيط البرنامج وضبط المراحل الرئيسية",
+        "التنسيق بين الاستشاريين والمقاولين",
+        "تقارير التقدم وتصعيد المشكلات",
+        "الإشراف على المخاطر والجودة والمشتريات"
+      ]
+    },
+    {
+      "id": "service-panel-04",
+      "number": "04",
+      "titleEn": "Real Estate",
+      "titleAr": "العقارات",
+      "descriptionEn": "Real estate support for clients seeking property opportunities, development positioning, and transaction guidance in Kuwait.",
+      "descriptionAr": "دعم عقاري للعملاء الباحثين عن فرص مناسبة وتوجيهات مرتبطة بالتطوير وإدارة الصفقات في الكويت.",
+      "offersEn": [
+        "Property sourcing and opportunity review",
+        "Market-oriented asset evaluation",
+        "Buyer and seller coordination",
+        "Development feasibility input"
+      ],
+      "offersAr": [
+        "البحث عن العقارات ومراجعة الفرص",
+        "تقييم الأصول وفقاً للسوق",
+        "التنسيق بين البائعين والمشترين",
+        "مدخلات الجدوى التطويرية"
+      ]
+    },
+    {
+      "id": "service-panel-05",
+      "number": "05",
+      "titleEn": "Property Development & Investment",
+      "titleAr": "التطوير العقاري والاستثمار",
+      "descriptionEn": "Development planning and investment support focused on long-term value, workable phasing, and commercially viable delivery models.",
+      "descriptionAr": "تخطيط تطويري ودعم استثماري يركز على القيمة طويلة الأمد ومراحل تنفيذ عملية ونماذج تسليم مجدية تجارياً.",
+      "offersEn": [
+        "Site potential and concept review",
+        "Investment and development planning",
+        "Phasing and delivery strategy",
+        "Commercial positioning for projects"
+      ],
+      "offersAr": [
+        "مراجعة إمكانات الموقع والمفهوم",
+        "التخطيط الاستثماري والتطويري",
+        "استراتيجية المراحل والتسليم",
+        "التموضع التجاري للمشاريع"
+      ]
+    },
+    {
+      "id": "service-panel-06",
+      "number": "06",
+      "titleEn": "Civil Engineering Works",
+      "titleAr": "الأعمال الهندسية المدنية",
+      "descriptionEn": "Execution of civil works packages for infrastructure, utilities, and external works with disciplined site controls.",
+      "descriptionAr": "تنفيذ حزم الأعمال المدنية للبنية التحتية والمرافق والأعمال الخارجية مع ضبط موقعي منظم.",
+      "offersEn": [
+        "Roads, pavements, and grading",
+        "Drainage and utility networks",
+        "Earthworks and enabling works",
+        "Public realm and infrastructure support"
+      ],
+      "offersAr": [
+        "الطرق والأرصفة وأعمال التسوية",
+        "شبكات الصرف والخدمات",
+        "الأعمال الترابية والتمهيدية",
+        "دعم البنية التحتية والأعمال العامة"
+      ]
+    },
+    {
+      "id": "service-panel-07",
+      "number": "07",
+      "titleEn": "Facility Management",
+      "titleAr": "إدارة المرافق",
+      "descriptionEn": "Operational support services that help facilities remain safe, functional, and efficient after project completion.",
+      "descriptionAr": "خدمات تشغيلية تساعد المرافق على البقاء آمنة وفعالة وكفؤة بعد اكتمال المشروع.",
+      "offersEn": [
+        "Preventive and corrective maintenance",
+        "MEP systems monitoring and upkeep",
+        "Asset condition and service coordination",
+        "Operational readiness support"
+      ],
+      "offersAr": [
+        "الصيانة الوقائية والتصحيحية",
+        "مراقبة وصيانة أنظمة MEP",
+        "متابعة حالة الأصول وتنسيق الخدمات",
+        "دعم الجاهزية التشغيلية"
+      ]
+    },
+    {
+      "id": "service-panel-08",
+      "number": "08",
+      "titleEn": "Land Sales",
+      "titleAr": "بيع الأراضي",
+      "descriptionEn": "Professional assistance for land transactions with practical evaluation of location, use potential, and development readiness.",
+      "descriptionAr": "مساندة احترافية لصفقات الأراضي مع تقييم عملي للموقع وإمكانات الاستخدام وجاهزية التطوير.",
+      "offersEn": [
+        "Land parcel review and matching",
+        "Use-case and development suitability checks",
+        "Transaction coordination support",
+        "Owner and buyer communication"
+      ],
+      "offersAr": [
+        "مراجعة الأراضي ومواءمتها مع المتطلبات",
+        "فحص ملاءمة الاستخدام والتطوير",
+        "دعم تنسيق المعاملات",
+        "التواصل بين المالك والمشتري"
+      ]
+    },
+    {
+      "id": "service-panel-09",
+      "number": "09",
+      "titleEn": "Architectural Drawings",
+      "titleAr": "المخططات المعمارية",
+      "descriptionEn": "Architectural drawing services that translate project requirements into clear layouts, presentation sets, and coordinated documents.",
+      "descriptionAr": "خدمات مخططات معمارية تحول متطلبات المشروع إلى توزيعات واضحة ومخططات عرض ووثائق منسقة.",
+      "offersEn": [
+        "Concept and schematic layouts",
+        "Permit and presentation drawing sets",
+        "Detailed architectural drafting",
+        "Coordination with engineering disciplines"
+      ],
+      "offersAr": [
+        "المفاهيم الأولية والمخططات المبدئية",
+        "مخططات التراخيص والعروض التقديمية",
+        "الرسم المعماري التفصيلي",
+        "التنسيق مع التخصصات الهندسية"
+      ]
+    }
+  ],
   "projects": [
     {
       "slug": "construction-and-completion-of-workers-housing-in-the-subhan-area-block-11",
@@ -410,38 +676,37 @@
         "حزم تشطيبات متميزة",
         "نقاط ضبط جودة في الموقع"
       ],
-      "heroImageUrl": "/uploads/projects/75be4db1-f90b-4185-8b2e-80078369cf69.png",
+      "heroImageUrl": "/uploads/projects/ebdc6894-bf80-4025-835c-acaafd15950f.jpg",
       "galleryImageUrls": [
-        "/uploads/projects/5ba77f7e-b774-49a5-a7ef-085099c764ba.png",
-        "/uploads/projects/be5a2b79-d43a-4fdb-b132-a796a4241b0f.png",
-        "/uploads/projects/ffc6b47a-0c1f-4465-99ce-c822d5b5cd74.png",
-        "/uploads/projects/b0b349c7-b451-494e-b49a-ad1b415684c3.png",
-        "/uploads/projects/acddc8b3-dbcb-4394-a891-4212d2cae77b.png",
-        "/uploads/projects/0198db02-60d1-4824-acec-7570da63886f.png",
-        "/uploads/projects/be927361-4c22-4df4-917e-267c9d56f5aa.png",
-        "/uploads/projects/8d2f673f-c4e1-4297-9016-86340d64c749.png",
-        "/uploads/projects/fec3d035-8300-4f0f-9a67-96fb655c1910.png",
-        "/uploads/projects/f4b62f35-ec69-4571-9734-a49568737f66.png",
-        "/uploads/projects/e38cc22f-78a7-411a-b928-730f3bc31406.png",
-        "/uploads/projects/a54571c1-e18e-4b3e-8cc9-05ac9d967914.png",
-        "/uploads/projects/15c553f5-47c4-4e7d-a905-c10571d52a96.png",
-        "/uploads/projects/015aeca2-98bd-4aef-a289-3753fec25cad.png",
-        "/uploads/projects/bf5c264a-27ee-444b-9e78-8417a8815ff7.png",
-        "/uploads/projects/e9dfd39d-d13d-4b6d-a43b-d38ede78e822.png",
-        "/uploads/projects/f085c7fd-8c89-4855-8bc5-11106c3c57d2.png",
-        "/uploads/projects/ece5ff82-3cd3-40cc-a19e-0bd1846bc66a.jpg",
-        "/uploads/projects/fea98631-ddad-4fc9-9fcf-ff60ed6ec914.png",
-        "/uploads/projects/c2ef0d18-b956-41af-b51a-f209dd58c7b5.png",
-        "/uploads/projects/5df3713a-7d7d-4147-9957-f5706de904c6.jpg",
-        "/uploads/projects/47613b88-396c-4914-8d68-362bff249c60.png",
-        "/uploads/projects/dcc40e55-58f6-49a5-9ff5-fe4b45807ef1.png",
-        "/uploads/projects/11770d7a-639b-448d-9df1-2138069cd053.png",
-        "/uploads/projects/2ca7e723-32ad-4539-a35a-7d2e88c9f868.jpg",
-        "/uploads/projects/c3921e5c-3e33-4135-af13-a9324c336eff.jpg",
-        "/uploads/projects/5c7b19ef-c977-492c-aff6-9be9c3e931d2.png",
-        "/uploads/projects/e7189026-35ec-439a-b35c-db85de6cad00.png",
-        "/uploads/projects/f592ef9c-085a-4965-a6c9-0b7ae81335b0.png",
-        "/uploads/projects/7f10d5d8-22f4-4009-b70a-72ff805e7b2b.png"
+        "/uploads/projects/a18e0d0f-f61a-4e2e-9a44-039c43ab8ec5.jpg",
+        "/uploads/projects/d8bfee21-96e9-4a1b-855d-7bc33784387a.jpg",
+        "/uploads/projects/ebd3849d-e764-49aa-b199-619660fe738c.jpg",
+        "/uploads/projects/15e77a31-9fe6-494a-9e1a-2a2240dad2bb.jpg",
+        "/uploads/projects/fd1f4c85-b833-40bb-bc4e-b05f73365c64.jpg",
+        "/uploads/projects/76dc983f-c9ad-40b8-84cc-772ab72735bd.jpg",
+        "/uploads/projects/4e73bc5b-67dd-44a1-a82c-382babe5a6d2.jpg",
+        "/uploads/projects/102ef41b-1b48-4d4d-9d9d-fecc425e7e05.jpg",
+        "/uploads/projects/cce2acd3-cf3a-48b5-b9f4-6af780aa3606.jpg",
+        "/uploads/projects/90c99e19-d441-4e79-9fad-e00d0bc6ce3d.jpg",
+        "/uploads/projects/7f377e37-db42-4001-875c-fc9b57949970.jpg",
+        "/uploads/projects/52ec0240-bb5f-41a4-9de2-591aa3743fe7.jpg",
+        "/uploads/projects/d26fa20c-950c-4368-8833-78fc45bb271f.jpg",
+        "/uploads/projects/e980b27b-6a36-42eb-8e1f-f0c34226c23b.jpg",
+        "/uploads/projects/f0d111af-73e0-4106-8a0c-6ab349b1994b.jpg",
+        "/uploads/projects/4728a490-0d49-4173-aaed-f14255417867.jpg",
+        "/uploads/projects/e32cfff6-511f-4f5e-bd65-8d3f43e672bd.jpg",
+        "/uploads/projects/e4637f53-0acb-431f-adac-96bc682bce51.jpg",
+        "/uploads/projects/21400e6a-0f1f-4d99-b2d5-9eca8594df5d.jpg",
+        "/uploads/projects/fd720c7a-4c5a-4c49-ba25-d10bbfdce58d.jpg",
+        "/uploads/projects/69f935cc-edab-442e-833a-0f0cc9b413b6.jpg",
+        "/uploads/projects/3b3a557a-b3cb-4cc2-b347-412a47dc8b34.jpg",
+        "/uploads/projects/da412b89-9839-4b61-9c78-afb5426e9fe5.jpg",
+        "/uploads/projects/8798f73f-7af2-4764-aeb5-c0f69a81cb65.jpg",
+        "/uploads/projects/c5fef3fe-c095-4312-b2a8-57a477465664.jpg",
+        "/uploads/projects/78d88d69-2bae-4563-be26-6a49a30fb559.jpg",
+        "/uploads/projects/e3fab7d1-7236-4768-9463-c0418694f9e2.jpg",
+        "/uploads/projects/74c6609d-b6a8-4aaf-ae6c-e9fe717c4d84.jpg",
+        "/uploads/projects/421d4570-8258-4fba-8659-a41670f8efc2.jpg"
       ]
     },
     {
@@ -486,32 +751,57 @@
         "أرضيات عالية التحمل",
         "تنفيذ ميداني وفق متطلبات السلامة"
       ],
-      "heroImageUrl": "/uploads/projects/07aa2300-130c-4c84-803d-29ee9c13df93.png",
+      "heroImageUrl": "/uploads/projects/f1e49ba0-aacd-4aee-a33f-cd2a79a558e6.jpg",
       "galleryImageUrls": [
-        "/uploads/projects/b6b773ec-1ae6-4b25-a425-f64eab4417e3.png",
-        "/uploads/projects/42bfe291-a1dd-45fa-aed2-a2cf0bb8f4f1.png",
-        "/uploads/projects/cf41e129-ee37-4782-821b-703b9c711410.jpg",
-        "/uploads/projects/338fafb6-e8c0-4fc6-b072-db40d1f82986.jpg",
-        "/uploads/projects/d49870b8-30f7-4128-9e93-fa86b3ac8d17.jpg",
-        "/uploads/projects/b60f0ba9-b4b0-40b5-bf59-ff1d0e2b8b80.jpg",
-        "/uploads/projects/f83a802f-c115-4541-aab1-e4c138ad77ed.jpg",
-        "/uploads/projects/6abd9367-5893-47aa-b1a3-5d0d5a57bd3a.jpg",
-        "/uploads/projects/92e857b8-252b-487b-8cba-dafbb833a59a.jpg",
-        "/uploads/projects/fa25b2fd-e6f9-4d5e-99da-974d07c94ece.jpg",
-        "/uploads/projects/9aea7018-2fca-448b-8cc1-3f8101523ad7.jpg",
-        "/uploads/projects/3d2e149c-3167-410c-97c3-798c938c89c6.png",
-        "/uploads/projects/1cdc6713-1b94-4f7f-bdb8-39e786a0f5ea.png",
-        "/uploads/projects/d812ffa7-8106-438e-946a-a190c4236c80.png",
-        "/uploads/projects/3d668298-3bb6-49e3-976d-288c73d6626e.jpg",
-        "/uploads/projects/64c6f055-3d17-43e6-825f-4d81f711d23f.jpg",
-        "/uploads/projects/21670d2f-29ad-4f9f-887c-4c4f40d2166c.png",
-        "/uploads/projects/76af34a8-e669-4c36-995e-b88274ffef21.png",
-        "/uploads/projects/8afbc20a-9cca-4877-8250-e5c1c39c3b76.png",
-        "/uploads/projects/97e623f5-cdcc-4c9a-88a2-ea939fd63faf.jpg",
-        "/uploads/projects/d2251443-ceae-42d6-91fb-e2e63058ddea.jpg",
-        "/uploads/projects/163e7b8c-80c7-4025-8824-c4449d5938c5.jpg",
-        "/uploads/projects/38f54289-4150-45b7-9516-04280d146dcd.jpg",
-        "/uploads/projects/0a3aad32-5987-41a8-b883-88e341ffddac.jpg"
+        "/uploads/projects/9331b4b2-e930-4e8b-a9bc-40eb83f2857e.jpg",
+        "/uploads/projects/009b2174-c07b-435d-8f94-e04c6f40aef3.jpg",
+        "/uploads/projects/caf1397f-9337-489e-97a5-5f4cccd6140b.jpg",
+        "/uploads/projects/da947fa8-46b1-4437-ab9c-4340d60b1e7b.jpg",
+        "/uploads/projects/94b6d418-eea3-49b0-9726-9107d1b9ac2d.jpg",
+        "/uploads/projects/3709d514-4768-4386-87ac-5b7d59dd156a.jpg",
+        "/uploads/projects/dc836d4b-5e80-4df4-8cde-a1fa18537d2c.jpg",
+        "/uploads/projects/5c2e1c7b-10cc-4f12-957b-0e3398d63b74.jpg",
+        "/uploads/projects/27d8fe90-2345-41f6-b709-3acce7e92e04.jpg",
+        "/uploads/projects/7b4dfcec-aeb8-4c39-931b-ad37f789805b.jpg",
+        "/uploads/projects/579fefee-8748-4259-a4da-fbf6e0efd6cc.jpg",
+        "/uploads/projects/bd3e7eed-6805-4cea-bcdb-8c90c95cc986.jpg",
+        "/uploads/projects/05d45641-ac5a-4f5b-a632-cb5089c50cff.jpg",
+        "/uploads/projects/c59f01d1-8eb1-4cd8-acd7-e46b49534f17.jpg",
+        "/uploads/projects/5d79019d-802c-4e41-b3fe-e809d59db9e7.jpg",
+        "/uploads/projects/59a602e6-c471-492d-a832-7a6ad139a36e.jpg",
+        "/uploads/projects/98dbe4e0-875f-487b-8d8a-909ed1476991.jpg",
+        "/uploads/projects/917f75fe-e0dd-4635-8607-f0e120a24d93.jpg",
+        "/uploads/projects/5a6bae6d-33b3-4891-aa10-f8d264b40df0.jpg",
+        "/uploads/projects/f5aa3a09-e3c7-4a76-860f-d932bd4290b4.jpg",
+        "/uploads/projects/b5df225e-6b9a-4e2b-a913-f8ede501edfb.jpg",
+        "/uploads/projects/467eb303-e121-4ee3-ba72-23f3c6da3460.jpg",
+        "/uploads/projects/e2231f3c-26ce-481c-b7b3-b8ad412fb82d.jpg",
+        "/uploads/projects/4f919c6e-2a91-4f8d-8102-b5aeae480534.jpg",
+        "/uploads/projects/6c29733a-8634-47eb-a2e6-df5f62e1062a.jpg",
+        "/uploads/projects/cf5f5d0c-42e8-4a71-9bb9-5a26734ececa.jpg",
+        "/uploads/projects/a373d60e-696f-4a8a-bd69-6e278444af4a.jpg",
+        "/uploads/projects/76f8c403-4d3f-452e-a858-bccd34bc7999.jpg",
+        "/uploads/projects/8f531f7d-3a4e-4cf9-afe0-5357342745ca.jpg",
+        "/uploads/projects/66bc6d9b-3abe-4476-b6ce-ba2d7c7f2c85.jpg",
+        "/uploads/projects/ea481a4b-7b32-462b-81cc-b138173772e5.jpg",
+        "/uploads/projects/f52fc55e-296b-486d-89fe-28cf4ba853c7.jpg",
+        "/uploads/projects/e61b0ab5-bcea-4450-b84a-0643eb126450.jpg",
+        "/uploads/projects/7a5b8daf-bb3d-468a-980a-ca50cac4ac93.jpg",
+        "/uploads/projects/e1ebd820-d326-4397-9935-03ef66da1829.jpg",
+        "/uploads/projects/a44ce57c-ff83-4889-8e25-7dd30bec1a5f.jpg",
+        "/uploads/projects/97fe3395-b3b3-4808-959c-f96eed7b37ae.jpg",
+        "/uploads/projects/4b14ab3e-0265-4053-9b53-dcb1293480bc.jpg",
+        "/uploads/projects/6c27a51f-bb80-4f3f-8a5e-e918f177c86f.jpg",
+        "/uploads/projects/2248c031-a015-4e22-97a1-b365cb95ff01.jpg",
+        "/uploads/projects/28494b9c-5c58-4b2e-86bc-0908989e8537.jpg",
+        "/uploads/projects/7016ae18-3590-490a-ae9c-e3f5efff53b6.jpg",
+        "/uploads/projects/0f6a9b22-b4c1-4afb-ae54-e5e8de33a4c2.jpg",
+        "/uploads/projects/1852b712-1db8-432c-86b6-4dda3554de7b.jpg",
+        "/uploads/projects/1805b9c4-57df-4363-9e67-18fed335c72f.jpg",
+        "/uploads/projects/9c3b7101-87fd-476d-bd0e-8ba00dbc9ef9.jpg",
+        "/uploads/projects/a915d50e-edfd-48ec-a50a-73d04a131b75.jpg",
+        "/uploads/projects/52a265f6-b5d4-4b2c-9370-1cbc9fc1197b.jpg",
+        "/uploads/projects/5ebcad91-d462-4eb8-b9d2-2403cc496633.jpg"
       ]
     },
     {
@@ -556,11 +846,23 @@
         "إجراءات موقع نظيف",
         "حزمة تشغيل وتسليم متكاملة"
       ],
-      "heroImageUrl": "/uploads/projects/1bcf4a4b-2d11-4e00-a797-bd1906d74b51.png",
+      "heroImageUrl": "/uploads/projects/bfe24a64-7dda-4412-a047-f22f8e4e08b1.png",
       "galleryImageUrls": [
-        "/uploads/projects/edf62407-47c5-4f0d-8aa9-d57c93bd0a7e.png",
-        "/uploads/projects/a43812af-055d-4268-828f-9f9fa232f999.png",
-        "/uploads/projects/12f89ddb-c1c8-43b2-b997-f0a8a3f4662c.png"
+        "/uploads/projects/a5c0eac9-02f9-4003-8d75-c1ab0f9ebfeb.jpg",
+        "/uploads/projects/ee5f1d8d-e9e3-4ba1-a503-d97e81b22152.png",
+        "/uploads/projects/e2e3d763-ed03-48ca-b0b2-6b13ae73a2ae.jpg",
+        "/uploads/projects/5e879ad7-7e0a-426b-9e78-5eca7d1a2f34.png",
+        "/uploads/projects/04b2780f-e03e-4f9c-a04f-a8ed32167515.jpg",
+        "/uploads/projects/039c32e4-ffa9-4f0a-b512-cf86bc8d2401.jpg",
+        "/uploads/projects/01d5c6c5-9ce9-4e21-86ea-26d235530b45.jpg",
+        "/uploads/projects/8ed63489-dbe7-4d57-8044-0e8e4233df49.jpg",
+        "/uploads/projects/6184c91d-bb1d-4d6b-9e54-e5bbf053f6e1.jpg",
+        "/uploads/projects/bc10bbba-acbe-4bac-9a01-01732d3973b0.jpg",
+        "/uploads/projects/6243deb8-b59f-4c87-904c-23bc2ed132b7.jpg",
+        "/uploads/projects/8f99c516-8c31-4af6-870f-52ec7fb2ce27.jpg",
+        "/uploads/projects/0c2ee804-6bc3-49cf-b761-a8235ce342cc.jpg",
+        "/uploads/projects/3e166e9c-ea00-45b4-8e38-e7e075424213.jpg",
+        "/uploads/projects/78866388-1153-4cf1-b57d-14b9e94e0b17.jpg"
       ]
     },
     {
@@ -605,40 +907,27 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/451d5d07-9ec0-4faf-8aca-6cf33a857b36.jpg",
+      "heroImageUrl": "/uploads/projects/02da7cec-b5b1-46c0-8160-94e099601b92.jpg",
       "galleryImageUrls": [
-        "/uploads/projects/53b7acd4-27b8-4736-af54-51ac282c8783.jpg",
-        "/uploads/projects/11cc53d8-1abc-47e9-8f33-11c897d64f11.jpg",
-        "/uploads/projects/4f13c0d7-2b62-442f-9832-28e32556fff1.jpg",
-        "/uploads/projects/402f57ed-4eae-4345-8380-056cda0d642e.jpg",
-        "/uploads/projects/08d5e9e7-0b1b-4ca6-8137-7b4570368cab.jpg",
-        "/uploads/projects/ecae857b-03c2-4e42-a634-f8b0cccadf27.jpg",
-        "/uploads/projects/fc2b0ff5-6417-4679-829b-2fd0d2ab693c.jpg",
-        "/uploads/projects/2ffe19a7-55df-4570-a9af-24450ed199f6.jpg",
-        "/uploads/projects/8cab9a5f-9758-48bf-b8b1-f6732d419799.jpg",
-        "/uploads/projects/2ca2faca-714b-4a5d-8b27-38d36d8287ca.jpg",
-        "/uploads/projects/0a150116-63b9-425f-b1a0-e2c645d9fb18.jpg",
-        "/uploads/projects/808b3302-ed21-4bc2-91fd-444780748f6f.jpg",
-        "/uploads/projects/794bba9f-c2b9-4dde-ac4f-88bb4efed969.jpg",
-        "/uploads/projects/7ee810d8-163b-4da9-bbe5-c497e14eedba.jpg",
-        "/uploads/projects/7d7071ac-3371-498b-8a98-660bdb140fff.jpg",
-        "/uploads/projects/cd9d4b6b-43ec-40a1-abd4-9b93d61b4d10.jpg",
-        "/uploads/projects/810b0be4-3547-4ed5-ab52-255600b8f915.jpg",
-        "/uploads/projects/3a352ca8-ab48-4e1d-91fa-19f043f13e20.jpg",
-        "/uploads/projects/78cd4dc6-ac22-465c-aca4-1c7b017a9ad4.jpg",
-        "/uploads/projects/644c2712-9eae-4891-93a7-3669337ef9be.jpg",
-        "/uploads/projects/7415a18b-873b-45f4-a7b3-c3cd0a2d0db2.jpg",
-        "/uploads/projects/adb5c6c1-c2ac-4c62-9d86-96b9b636b6ef.jpg",
-        "/uploads/projects/a284cc23-7a45-492a-b5cc-47b35764448c.jpg",
-        "/uploads/projects/5003f1a6-5ebe-4c91-9aa9-562e76735c4e.jpg",
-        "/uploads/projects/9ae6d8f2-cf28-4abf-b046-296e187e1461.jpg",
-        "/uploads/projects/13e250cd-6368-4332-8cce-a93ceb60cf2b.jpg",
-        "/uploads/projects/00ddc269-5e80-4a6d-8cf3-4f7570988b40.jpg",
-        "/uploads/projects/1a0e0225-17d9-4ea5-93cf-0c1aa4f7a26f.jpg",
-        "/uploads/projects/93de1683-a8e4-4c9c-bfea-b92f71504687.jpg",
-        "/uploads/projects/0d912c7c-87b2-4619-882f-aa0054228d8f.jpg",
-        "/uploads/projects/c6855bc1-dba7-4c40-8866-8063ef921b15.jpg",
-        "/uploads/projects/dc646d9b-87c6-4332-a76b-82a32b56d69b.jpg"
+        "/uploads/projects/c4967045-230e-46e4-8197-17f98b572312.jpg",
+        "/uploads/projects/5cd8aa2b-7041-48ab-acc2-8da30ca8f3c6.jpg",
+        "/uploads/projects/e75e0987-c86a-4cad-ad5a-fe2fddd5e7d5.jpg",
+        "/uploads/projects/bb3abc82-9db3-4054-9faa-f5444e70252c.jpg",
+        "/uploads/projects/3d84bb11-2204-495e-8365-7a82d5b75151.jpg",
+        "/uploads/projects/37d09b51-0132-4369-b72f-8bf199f5677e.jpg",
+        "/uploads/projects/84ef061e-3e63-49ca-9241-55456bca92e8.jpg",
+        "/uploads/projects/8eba4b81-c930-4326-bd00-48958b0136da.jpg",
+        "/uploads/projects/f7e03fcd-e21c-468c-ad85-8f03ec0487e0.jpg",
+        "/uploads/projects/744a771f-d790-44b8-840c-2a099d3cc55a.jpg",
+        "/uploads/projects/13d17089-f88b-48e4-9c71-5fdc1d0e7578.jpg",
+        "/uploads/projects/6d1100f4-1682-42e9-9685-3b71face9344.jpg",
+        "/uploads/projects/c7fff0c6-46cf-4b76-aa3e-99e4b394e0f5.jpg",
+        "/uploads/projects/97b27d4f-0b2e-4e17-8920-6071fb62d54a.jpg",
+        "/uploads/projects/6323bbc3-5bba-4a41-81ed-12e7093bd842.jpg",
+        "/uploads/projects/fb5d391f-5ec3-4671-8808-d92ba79061d6.jpg",
+        "/uploads/projects/87d531a5-2479-46c7-ad1f-08bc0f246997.jpg",
+        "/uploads/projects/c9d73c8c-f5db-4e1f-a97a-84d13ae30bd6.jpg",
+        "/uploads/projects/61ffe320-fc99-402d-a8ef-a2253eae294c.jpg"
       ]
     },
     {
@@ -875,7 +1164,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/b956bd7d-c3a3-471d-b902-db925f5bf9bb.jpg",
+      "heroImageUrl": "/uploads/projects/48218520-8523-4690-8033-f2f756e35523.jpg",
       "galleryImageUrls": [
         "/uploads/projects/0e85cbaf-f042-497a-8d43-838fc94c7747.jpg",
         "/uploads/projects/ee9fa9c9-52ba-4dd6-8d20-dc53c1f338b2.jpg",
@@ -931,9 +1220,9 @@
       ]
     },
     {
-      "slug": "renovation-of-5-co-operative-branches",
-      "titleEn": "Renovation of 5 Co-operative Branches",
-      "titleAr": "تجديد 5 فروع تعاونية",
+      "slug": "construction-of-wedding-halls",
+      "titleEn": "Construction of wedding halls",
+      "titleAr": "بناء قاعات الأفراح",
       "clientEn": "AL- Nassim Co-operative Society",
       "clientAr": "جمعية النسيم التعاونية",
       "categoryEn": "Finishing Items",
@@ -945,11 +1234,11 @@
       "statusEn": "completed",
       "statusAr": "مكتمل",
       "showInProjectsTable": true,
-      "showInProjectsDropdown": true,
-      "summaryEn": "Renovation of 5 Co-operative Branches",
-      "summaryAr": "تجديد 5 فروع تعاونية",
-      "detailsEn": "Renovation of 5 Co-operative Branches",
-      "detailsAr": "تجديد 5 فروع تعاونية",
+      "showInProjectsDropdown": false,
+      "summaryEn": "Construction of wedding halls",
+      "summaryAr": "بناء قاعات الأفراح",
+      "detailsEn": "Construction of wedding halls",
+      "detailsAr": "بناء قاعات الأفراح",
       "scopeEn": [
         "Earthworks",
         "Drainage",
@@ -973,12 +1262,7 @@
         "حزمة تسليم ومخططات As-Built"
       ],
       "heroImageUrl": "/uploads/projects/dbe5cb2c-1669-4090-b5cb-6ceec4e479ee.jpg",
-      "galleryImageUrls": [
-        "/uploads/projects/80df39cb-aca7-4956-82ff-b315048bfbc9.jpg",
-        "/uploads/projects/d9a69708-6887-425f-8f6e-5d1d6575e6c6.jpg",
-        "/uploads/projects/fecdda85-6289-441c-bfee-f80694770d31.jpg",
-        "/uploads/projects/65181d4b-66b3-4290-b8a1-9188ea71c41a.jpg"
-      ]
+      "galleryImageUrls": []
     },
     {
       "slug": "construction-of-residential-building",
@@ -1289,6 +1573,36 @@
       "highlightsAr": [],
       "heroImageUrl": "/placeholder.jpg",
       "galleryImageUrls": []
+    },
+    {
+      "slug": "construction-of-central-market-building",
+      "titleEn": "Construction of central Market building ",
+      "titleAr": "بناء مبنى السوق المركزي",
+      "clientEn": "",
+      "clientAr": "",
+      "categoryEn": "Concrete works",
+      "categoryAr": "أعمال الخرسانة",
+      "locationEn": "Rumaithyia ",
+      "locationAr": "روميثيا ",
+      "year": "2026",
+      "statusEn": "",
+      "statusAr": "",
+      "showInProjectsTable": true,
+      "showInProjectsDropdown": true,
+      "summaryEn": "Construction of central Market building ",
+      "summaryAr": "بناء مبنى السوق المركزي",
+      "detailsEn": "Construction of central Market building ",
+      "detailsAr": "بناء مبنى السوق المركزي",
+      "scopeEn": [],
+      "scopeAr": [],
+      "highlightsEn": [],
+      "highlightsAr": [],
+      "heroImageUrl": "/uploads/projects/9796efce-f265-4319-bd9e-8f3bca90a583.jpg",
+      "galleryImageUrls": [
+        "/uploads/projects/32fc724d-5778-4b5e-b6e0-cf671abc4be6.jpg",
+        "/uploads/projects/89935cd8-5115-452b-bfc0-07b78e76db02.jpg",
+        "/uploads/projects/ef50fe1f-1aa9-4be3-b9db-e12644086ad2.jpg"
+      ]
     }
   ],
   "careers": {

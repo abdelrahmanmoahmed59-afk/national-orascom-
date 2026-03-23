@@ -92,13 +92,13 @@ export default function CareersClient({
                   <>
                     Careers at
                     <br />
-                    <span className="italic font-normal">National Orascom</span>
+                    <span className="font-medium">National Orascom</span>
                   </>
                 ) : (
                   <>
                     الوظائف في
                     <br />
-                    <span className="italic font-normal">ناشونال أوراسكوم</span>
+                    <span className="font-medium">ناشونال أوراسكوم</span>
                   </>
                 )}
               </h1>

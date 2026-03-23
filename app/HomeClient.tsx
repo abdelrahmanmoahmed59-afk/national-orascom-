@@ -67,7 +67,7 @@ export default function HomeClient({
           <div className="grid lg:grid-cols-12 gap-14 lg:gap-16 items-center">
             <div className="lg:col-span-7 space-y-10">
               <ScrollAnimatedElement animation="slide-up" className="space-y-4">
-                <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
+                <p className="text-sm not-italic tracking-[0.3em] uppercase text-muted-foreground">
                   {language === "en" ? "Construction & Contracting" : "البناء والمقاولات"}
                 </p>
               </ScrollAnimatedElement>
@@ -76,7 +76,7 @@ export default function HomeClient({
                 <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] tracking-tight">
                   {t.hero.title}
                   <br />
-                  <span className="italic font-normal">{t.hero.subtitle}</span>
+                  <span className="font-medium">{t.hero.subtitle}</span>
                 </h1>
               </ScrollAnimatedElement>
 
@@ -200,7 +200,7 @@ export default function HomeClient({
             <Button asChild variant="outline" size="lg" className="rounded-none px-8 h-14 bg-transparent">
               <Link href="/projects">
                 {t.projects.viewAll}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className={dir === "rtl" ? "mr-2 h-4 w-4 rotate-180" : "ml-2 h-4 w-4"} />
               </Link>
             </Button>
           </ScrollRevealSection>
@@ -311,14 +311,14 @@ export default function HomeClient({
               </p>
             </AnimatedSection>
             <AnimatedSection animation="reveal-up" delay={100}>
-              <h2 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[0.95]">
+              <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl leading-[0.95]">
                 {language === "en" ? (
                   "Get In Touch"
                 ) : (
                   <>
                     لنبدأ
                     <br />
-                    <span className="italic font-normal">محادثة</span>
+                    <span className="font-medium">محادثة</span>
                   </>
                 )}
               </h2>

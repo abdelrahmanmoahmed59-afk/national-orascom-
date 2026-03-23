@@ -57,13 +57,13 @@ export default function AboutClient({
                   <>
                     Built for
                     <br />
-                    <span className="italic font-normal">delivery</span>
+                    <span className="font-medium">delivery</span>
                   </>
                 ) : (
                   <>
                     مصممة
                     <br />
-                    <span className="italic font-normal">للتنفيذ</span>
+                    <span className="font-medium">للتنفيذ</span>
                   </>
                 )}
               </h1>

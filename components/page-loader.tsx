@@ -44,18 +44,18 @@ export function PageLoader({ branding }: { branding: SiteContent["branding"] }) 
             transition: "all 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          <div className="flex h-24 w-24 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_18px_45px_rgba(15,15,15,0.12)]">
+          <div className="flex h-28 w-[156px] items-center justify-center overflow-visible">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={branding.logo.src}
               alt={branding.logo.alt.en}
-              className="h-16 w-16 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_5px_12px_rgba(0,0,0,0.20)]"
+              className="max-h-20 w-full max-w-[132px] object-contain brightness-[1.06] contrast-[1.12] saturate-[1.04]"
             />
           </div>
         </div>
 
         <span
-          className="font-serif text-5xl md:text-7xl font-semibold tracking-tight text-center block"
+          className="font-serif text-5xl md:text-7xl font-extrabold tracking-tight text-center block"
           style={{
             opacity: progress > 20 ? 1 : 0,
             transform: `translateY(${progress > 20 ? 0 : 20}px)`,
@@ -67,7 +67,7 @@ export function PageLoader({ branding }: { branding: SiteContent["branding"] }) 
           {branding.companyName.en.split(" ").slice(1).join(" ") || branding.companyName.en}
         </span>
         <span
-          className="absolute -bottom-6 left-0 right-0 text-center text-xs tracking-[0.3em] uppercase text-muted-foreground"
+          className="absolute -bottom-6 left-0 right-0 text-center text-xs font-bold not-italic tracking-[0.3em] uppercase text-muted-foreground"
           style={{
             opacity: progress > 40 ? 1 : 0,
             transition: "opacity 0.6s ease",
