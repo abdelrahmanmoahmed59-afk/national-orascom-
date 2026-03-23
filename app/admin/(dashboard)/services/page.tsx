@@ -3,6 +3,5 @@ import ServicesEditor from "./services-editor"
 
 export default async function AdminServicesPage() {
   const content = await readSiteContent()
-  return <ServicesEditor initialServices={content.services} />
+  return <ServicesEditor initialServices={content.services} initialServicePanels={content.servicesFeaturePanels} />
 }
-

@@ -11,26 +11,42 @@ import type { SiteContent } from "@/lib/site-content/schema"
 type AboutContent = SiteContent["about"]
 type AboutStat = SiteContent["aboutStats"][number]
 type AboutValue = SiteContent["aboutValues"][number]
+type AboutCoreValues = SiteContent["aboutCoreValues"]
 type AboutMilestone = SiteContent["aboutMilestones"][number]
+
+function linesToItems(value: string) {
+  return value
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+}
+
+function itemsToLines(items: string[]) {
+  return items.join("\n")
+}
 
 export default function AboutEditor({
   initialAbout,
   initialStats,
   initialValues,
+  initialCoreValues,
   initialMilestones,
 }: {
   initialAbout: AboutContent
   initialStats: AboutStat[]
   initialValues: AboutValue[]
+  initialCoreValues: AboutCoreValues
   initialMilestones: AboutMilestone[]
 }) {
   const [about, setAbout] = useState<AboutContent>(initialAbout)
   const [stats, setStats] = useState<AboutStat[]>(initialStats)
   const [values, setValues] = useState<AboutValue[]>(initialValues)
+  const [coreValues, setCoreValues] = useState<AboutCoreValues>(initialCoreValues)
   const [milestones, setMilestones] = useState<AboutMilestone[]>(initialMilestones)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const imageInput = useRef<HTMLInputElement | null>(null)
+  const coreValueImageInputs = useRef<Record<string, HTMLInputElement | null>>({})
 
   async function uploadImage(file: File) {
     const form = new FormData()
@@ -52,6 +68,7 @@ export default function AboutEditor({
       current.about = about
       current.aboutStats = stats
       current.aboutValues = values
+      current.aboutCoreValues = coreValues
       current.aboutMilestones = milestones
 
       const res = await fetch("/api/admin/site-content", {
@@ -82,6 +99,28 @@ export default function AboutEditor({
     ])
   }
 
+  function addCoreValue() {
+    const id = typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `core-value-${Date.now()}`
+    setCoreValues((prev) => ({
+      ...prev,
+      items: [
+        ...prev.items,
+        {
+          id,
+          labelEn: "New card",
+          labelAr: "بطاقة جديدة",
+          imageUrl: "/placeholder.jpg",
+          statementEn: "",
+          statementAr: "",
+          introEn: "",
+          introAr: "",
+          pointsEn: [],
+          pointsAr: [],
+        },
+      ],
+    }))
+  }
+
   function addMilestone() {
     setMilestones((prev) => [...prev, { year: new Date().getFullYear().toString(), titleEn: "New milestone", titleAr: "محطة جديدة" }])
   }
@@ -91,7 +130,9 @@ export default function AboutEditor({
       <div className="flex items-start justify-between gap-4">
         <div>
           <h1 className="font-serif text-3xl">About</h1>
-          <p className="text-muted-foreground mt-2">Edit bilingual about page content, stats, values, and milestones.</p>
+          <p className="text-muted-foreground mt-2">
+            Edit bilingual about page content, stats, values, core values cards, and milestones.
+          </p>
         </div>
         <Button className="rounded-none h-10" onClick={save} disabled={saving}>
           <Save className="h-4 w-4 mr-2" />
@@ -494,6 +535,279 @@ export default function AboutEditor({
         )}
       </div>
 
+      {/* Core Values Cards */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <h2 className="font-serif text-2xl">Core Values Cards</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Manage the image-based cards integrated into the About values section.
+            </p>
+          </div>
+          <Button variant="outline" className="rounded-none h-10" onClick={addCoreValue}>
+            <Plus className="h-4 w-4 mr-2" />
+            Add Card
+          </Button>
+        </div>
+
+        <div className="border border-border/60 p-6 space-y-6">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label className="text-xs tracking-[0.15em] uppercase">Section Title (EN)</Label>
+              <Input
+                value={coreValues.titleEn}
+                onChange={(e) => setCoreValues((prev) => ({ ...prev, titleEn: e.target.value }))}
+                className="rounded-none h-11 border-foreground/20"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-xs tracking-[0.15em] uppercase">Section Title (AR)</Label>
+              <Input
+                value={coreValues.titleAr}
+                onChange={(e) => setCoreValues((prev) => ({ ...prev, titleAr: e.target.value }))}
+                className="rounded-none h-11 border-foreground/20"
+              />
+            </div>
+          </div>
+
+          {coreValues.items.length === 0 ? (
+            <div className="border border-border/60 p-8 text-muted-foreground">
+              No core value cards yet. Click <span className="font-medium">Add Card</span> to create the first one.
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {coreValues.items.map((value, index) => (
+                <details key={value.id} className="group border border-border/60 bg-background/50">
+                  <summary className="cursor-pointer list-none p-6 flex items-start justify-between gap-6">
+                    <div className="min-w-0">
+                      <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">
+                        Card {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <h3 className="font-serif text-xl mt-2">{value.labelEn || "Untitled card"}</h3>
+                    </div>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="rounded-none h-10"
+                      onClick={(e) => {
+                        e.preventDefault()
+                        setCoreValues((prev) => ({
+                          ...prev,
+                          items: prev.items.filter((item) => item.id !== value.id),
+                        }))
+                      }}
+                    >
+                      <Trash2 className="h-4 w-4 mr-2" />
+                      Delete
+                    </Button>
+                  </summary>
+
+                  <div className="px-6 pb-8 space-y-6">
+                    <div className="grid lg:grid-cols-2 gap-6">
+                      <div className="space-y-4">
+                        <div className="grid sm:grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <Label className="text-xs tracking-[0.15em] uppercase">Label (EN)</Label>
+                            <Input
+                              value={value.labelEn}
+                              onChange={(e) =>
+                                setCoreValues((prev) => ({
+                                  ...prev,
+                                  items: prev.items.map((item) =>
+                                    item.id === value.id ? { ...item, labelEn: e.target.value } : item,
+                                  ),
+                                }))
+                              }
+                              className="rounded-none h-11 border-foreground/20"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label className="text-xs tracking-[0.15em] uppercase">Label (AR)</Label>
+                            <Input
+                              value={value.labelAr}
+                              onChange={(e) =>
+                                setCoreValues((prev) => ({
+                                  ...prev,
+                                  items: prev.items.map((item) =>
+                                    item.id === value.id ? { ...item, labelAr: e.target.value } : item,
+                                  ),
+                                }))
+                              }
+                              className="rounded-none h-11 border-foreground/20"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Headline (EN)</Label>
+                          <Textarea
+                            value={value.statementEn}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, statementEn: e.target.value } : item,
+                                ),
+                              }))
+                            }
+                            rows={3}
+                            className="rounded-none border-foreground/20 resize-none"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Headline (AR)</Label>
+                          <Textarea
+                            value={value.statementAr}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, statementAr: e.target.value } : item,
+                                ),
+                              }))
+                            }
+                            rows={3}
+                            className="rounded-none border-foreground/20 resize-none"
+                          />
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Intro (EN)</Label>
+                          <Textarea
+                            value={value.introEn}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, introEn: e.target.value } : item,
+                                ),
+                              }))
+                            }
+                            rows={4}
+                            className="rounded-none border-foreground/20 resize-none"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Intro (AR)</Label>
+                          <Textarea
+                            value={value.introAr}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, introAr: e.target.value } : item,
+                                ),
+                              }))
+                            }
+                            rows={4}
+                            className="rounded-none border-foreground/20 resize-none"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Image</p>
+                        <div className="border border-border/60 bg-background/50 aspect-square max-w-xs overflow-hidden">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={value.imageUrl || "/placeholder.jpg"} alt="" className="w-full h-full object-cover" />
+                        </div>
+
+                        <input
+                          ref={(el) => {
+                            coreValueImageInputs.current[value.id] = el
+                          }}
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={async (e) => {
+                            const file = e.target.files?.[0]
+                            if (!file) return
+                            setMessage(null)
+                            try {
+                              const src = await uploadImage(file)
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) => (item.id === value.id ? { ...item, imageUrl: src } : item)),
+                              }))
+                              setMessage("Image uploaded.")
+                            } catch {
+                              setMessage("Image upload failed.")
+                            } finally {
+                              e.target.value = ""
+                            }
+                          }}
+                        />
+
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="rounded-none h-10 w-full max-w-xs"
+                          onClick={() => coreValueImageInputs.current[value.id]?.click()}
+                        >
+                          <Upload className="h-4 w-4 mr-2" />
+                          Upload image
+                        </Button>
+
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Image path</Label>
+                          <div className="flex gap-2">
+                            <Input value={value.imageUrl} readOnly className="rounded-none h-11 border-foreground/20" />
+                            <Button
+                              type="button"
+                              variant="outline"
+                              className="rounded-none h-11 px-3"
+                              onClick={() => navigator.clipboard.writeText(value.imageUrl)}
+                              title="Copy"
+                            >
+                              <Upload className="h-4 w-4" />
+                            </Button>
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Points (EN)</Label>
+                          <Textarea
+                            value={itemsToLines(value.pointsEn)}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, pointsEn: linesToItems(e.target.value) } : item,
+                                ),
+                              }))
+                            }
+                            rows={7}
+                            className="rounded-none border-foreground/20 resize-none"
+                            placeholder="One item per line"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Points (AR)</Label>
+                          <Textarea
+                            value={itemsToLines(value.pointsAr)}
+                            onChange={(e) =>
+                              setCoreValues((prev) => ({
+                                ...prev,
+                                items: prev.items.map((item) =>
+                                  item.id === value.id ? { ...item, pointsAr: linesToItems(e.target.value) } : item,
+                                ),
+                              }))
+                            }
+                            rows={7}
+                            className="rounded-none border-foreground/20 resize-none"
+                            placeholder="One item per line"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* Milestones */}
       <div className="space-y-4">
         <div className="flex items-center justify-between gap-4">
@@ -578,4 +892,3 @@ export default function AboutEditor({
     </div>
   )
 }
-

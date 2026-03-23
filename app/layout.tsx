@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Cairo } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/lib/i18n/language-context"
 import { ThemeProvider } from "@/lib/theme-context"
@@ -11,14 +11,9 @@ import { AppChrome } from "@/components/app-chrome"
 import "./globals.css"
 import { unstable_noStore as noStore } from "next/cache"
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
+const cairo = Cairo({
+  subsets: ["latin", "arabic"],
+  variable: "--font-cairo",
 })
 
 export const metadata: Metadata = {
@@ -45,10 +40,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f3ef" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
-  ],
+  themeColor: "#f5f3ef",
   width: "device-width",
   initialScale: 1,
 }
@@ -62,7 +54,7 @@ export default async function RootLayout({
   const siteContent = await readSiteContent()
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" suppressHydrationWarning className={cairo.variable}>
       <body className="font-sans antialiased">
         <ThemeProvider>
           <LanguageProvider>

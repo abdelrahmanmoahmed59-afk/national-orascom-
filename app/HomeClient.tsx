@@ -7,22 +7,12 @@ import { Button } from "@/components/ui/button"
 import { ParallaxScrollElement } from "@/components/parallax-scroll-element"
 import { ScrollAnimatedElement } from "@/components/scroll-animated-element"
 import { ScrollRevealSection } from "@/components/scroll-reveal-section"
-import { useCountUp } from "@/lib/animation-system"
 import { useLanguage } from "@/lib/i18n/language-context"
 import type { ProjectItem, ServiceItem, SiteContent } from "@/lib/site-content/schema"
 import { AnimatedSection } from "@/components/animated-section"
+import { AnimatedCounter } from "@/components/animated-counter"
 import { ContactMain } from "@/components/contact-main"
 import { ClientsLogoSlider } from "@/components/clients-logo-slider"
-
-function AnimatedCounter({ value, suffix = "" }: { value: number; suffix?: string }) {
-  const { ref, count } = useCountUp(value, { duration: 2200 })
-  return (
-    <span ref={ref} className="tabular-nums">
-      {count}
-      {suffix}
-    </span>
-  )
-}
 
 export default function HomeClient({
   services,
@@ -46,10 +36,10 @@ export default function HomeClient({
 
   const stats = useMemo(
     () => [
-      { value: 15, suffix: "+", labelEn: "Years of Delivery", labelAr: "سنوات من الإنجاز" },
-      { value: 120, suffix: "+", labelEn: "Projects Supported", labelAr: "مشروع تم دعمه" },
-      { value: 300, suffix: "+", labelEn: "Team Members", labelAr: "عضو فريق" },
-      { value: 6, suffix: "+", labelEn: "Service Lines", labelAr: "مجالات خدمة" },
+      { value: 10, suffix: "+", labelEn: "Years of Delivery", labelAr: "سنوات من الإنجاز" },
+      { value: 20, suffix: "+", labelEn: "Projects Supported", labelAr: "مشروع تم دعمه" },
+      { value: 50, suffix: "+", labelEn: "Team Members", labelAr: "عضو فريق" },
+      { value: 12, suffix: "+", labelEn: "Service Lines", labelAr: "مجالات خدمة" },
     ],
     [],
   )
@@ -128,7 +118,7 @@ export default function HomeClient({
                   <div className="relative aspect-4/5 overflow-hidden border border-border/60">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/modern-corporate-building-kuwait-premium-architect.jpg"
+                      src="/nationalProfile.png"
                       alt={language === "en" ? "Construction project" : "مشروع بناء"}
                       className="w-full h-full object-cover"
                     />
@@ -323,11 +313,7 @@ export default function HomeClient({
             <AnimatedSection animation="reveal-up" delay={100}>
               <h2 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[0.95]">
                 {language === "en" ? (
-                  <>
-                    Let&apos;s start a
-                    <br />
-                    <span className="italic font-normal">conversation</span>
-                  </>
+                  "Get In Touch"
                 ) : (
                   <>
                     لنبدأ

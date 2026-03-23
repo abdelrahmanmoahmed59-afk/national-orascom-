@@ -19,10 +19,23 @@ export async function middleware(request: NextRequest) {
       if (isAdminApi) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
       }
-      const url = request.nextUrl.clone()
-      url.pathname = "/admin/login"
+      const forwardedProto = request.headers.get("x-forwarded-proto")?.split(",")[0]?.trim()
+      const forwardedHost = request.headers.get("x-forwarded-host")?.split(",")[0]?.trim()
+      const host = (forwardedHost || request.headers.get("host"))?.trim()
+
+      const protocol =
+        forwardedProto ||
+        (process.env.NODE_ENV === "production" ? "https" : request.nextUrl.protocol.replace(":", "")) ||
+        "http"
+
+      const url = host
+        ? new URL(`${protocol}://${host}/admin/login`)
+        : new URL("/admin/login", request.url)
       url.searchParams.set("next", pathname)
-      return NextResponse.redirect(url)
+
+      const response = NextResponse.redirect(url)
+      response.headers.set("Cache-Control", "no-store")
+      return response
     }
   }
 
@@ -32,4 +45,3 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: ["/admin/:path*", "/api/admin/:path*"],
 }
-

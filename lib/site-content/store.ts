@@ -21,7 +21,17 @@ export async function readSiteContent(): Promise<SiteContent> {
   await ensureContentFileExists()
   const raw = await fs.readFile(CONTENT_PATH, "utf8")
   const json = JSON.parse(raw) as unknown
-  return siteContentSchema.parse(json)
+  const record = typeof json === "object" && json !== null ? (json as Record<string, unknown>) : {}
+
+  if (!("servicesFeaturePanels" in record)) {
+    record.servicesFeaturePanels = DEFAULT_SITE_CONTENT.servicesFeaturePanels
+  }
+
+  if (!("aboutCoreValues" in record)) {
+    record.aboutCoreValues = DEFAULT_SITE_CONTENT.aboutCoreValues
+  }
+
+  return siteContentSchema.parse(record)
 }
 
 export async function writeSiteContent(next: unknown): Promise<SiteContent> {
@@ -38,4 +48,3 @@ export async function writeSiteContent(next: unknown): Promise<SiteContent> {
 export function getSiteContentPath() {
   return CONTENT_PATH
 }
-

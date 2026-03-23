@@ -86,13 +86,17 @@ export function Footer({
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-4 space-y-6">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <span className="inline-flex h-10 w-10 items-center justify-center border border-background/20 bg-background/5 overflow-hidden">
+            <Link href="/" className="inline-flex items-center gap-4">
+              <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-background/45 bg-background/95 shadow-[0_14px_40px_rgba(0,0,0,0.22)]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={branding.logo.src} alt={branding.logo.alt[language]} className="h-7 w-7 object-contain" />
+                <img
+                  src={branding.logo.src}
+                  alt={branding.logo.alt[language]}
+                  className="h-11 w-11 object-contain brightness-[1.03] contrast-[1.2] saturate-[1.18] drop-shadow-[0_4px_10px_rgba(0,0,0,0.24)]"
+                />
               </span>
               <div className="leading-tight">
-                <div className="font-serif text-xl tracking-tight text-background">{branding.companyName[language]}</div>
+                <div className="font-serif text-2xl font-semibold tracking-tight text-background">{branding.companyName[language]}</div>
                 <div className="text-[10px] tracking-[0.25em] uppercase text-background/60">
                   {branding.tagline[language]}
                 </div>
@@ -100,8 +104,8 @@ export function Footer({
             </Link>
             <p className="text-background/60 leading-relaxed max-w-sm">
               {language === "en"
-                ? "Construction and contracting services delivered with safety, quality, and reliable execution."
-                : "خدمات البناء والمقاولات مع التركيز على السلامة والجودة والتنفيذ الموثوق."}
+                ? "National Orascom is a Kuwaiti-based construction and general contracting firm, officially licensed by the Ministry of Commerce & Industry. With a solid capital base and a well-structured organizational setup, we are recognized for delivering quality building solutions across commercial, residential, and industrial projects."
+                : "شركة أوراسكوم الوطنية هي شركة مقاولات عامة وإنشائية مقرها الكويت، مرخصة رسمياً من وزارة التجارة والصناعة. بفضل رأس مالها المتين وهيكلها التنظيمي المتين، تُعرف الشركة بتقديم حلول بناء عالية الجودة في المشاريع التجارية والسكنية والصناعية."}
             </p>
           </div>
 

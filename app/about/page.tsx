@@ -11,6 +11,7 @@ export default async function AboutPage() {
       content={siteContent.about}
       stats={siteContent.aboutStats}
       values={siteContent.aboutValues}
+      coreValues={siteContent.aboutCoreValues}
       milestones={siteContent.aboutMilestones}
     />
   )

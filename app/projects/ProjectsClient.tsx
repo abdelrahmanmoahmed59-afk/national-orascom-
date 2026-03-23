@@ -69,8 +69,8 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
             </h2>
             <p className="text-muted-foreground mt-3">
               {language === "en"
-                ? "A quick, structured overview of our projects. Tap a row to open the full details page."
-                : "نظرة سريعة ومنظمة على مشاريعنا. اضغط على أي صف لفتح صفحة التفاصيل الكاملة."}
+                ? "A quick, structured overview of our projects."
+                : "نظرة سريعة ومنظمة على مشاريعنا."}
             </p>
           </AnimatedSection>
 
@@ -85,7 +85,6 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
               {/* Mobile cards */}
               <div className="md:hidden space-y-3">
                 {tableProjects.map((project, index) => {
-                  const href = `/projects/${encodeURIComponent(project.slug)}`
                   const title = language === "en" ? project.titleEn : project.titleAr
                   const client = (language === "en" ? project.clientEn : project.clientAr) || "—"
                   const location = language === "en" ? project.locationEn : project.locationAr
@@ -93,10 +92,7 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                   const status = (language === "en" ? project.statusEn : project.statusAr) || "—"
                   return (
                     <AnimatedSection key={project.slug} animation="reveal-up" delay={Math.min(index * 50, 250)}>
-                      <Link
-                        href={href}
-                        className="block border border-border/60 bg-background/40 hover:bg-muted transition-colors p-5"
-                      >
+                      <div className="border border-border/60 bg-background/40 p-5">
                         <div className="flex items-start justify-between gap-4">
                           <div className="min-w-0">
                             <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">
@@ -104,7 +100,6 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                             </p>
                             <p className="font-serif text-xl mt-2 line-clamp-2">{title}</p>
                           </div>
-                          <ArrowUpRight className="h-4 w-4 text-muted-foreground mt-1 shrink-0" />
                         </div>
 
                         <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
@@ -139,7 +134,7 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                             <p className="text-muted-foreground line-clamp-2">{status}</p>
                           </div>
                         </div>
-                      </Link>
+                      </div>
                     </AnimatedSection>
                   )
                 })}
@@ -163,7 +158,6 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                       </thead>
                       <tbody>
                         {tableProjects.map((project, index) => {
-                          const href = `/projects/${encodeURIComponent(project.slug)}`
                           const title = language === "en" ? project.titleEn : project.titleAr
                           const client = (language === "en" ? project.clientEn : project.clientAr) || "—"
                           const location = language === "en" ? project.locationEn : project.locationAr
@@ -173,9 +167,9 @@ export default function ProjectsClient({ projects }: { projects: ProjectItem[] }
                             <tr key={project.slug} className="border-t border-border/60 hover:bg-muted/30 transition-colors">
                               <td className="p-3 whitespace-nowrap text-muted-foreground">{index + 1}</td>
                               <td className="p-3">
-                                <Link href={href} className="font-medium hover:underline">
+                                <span className="font-medium">
                                   {title}
-                                </Link>
+                                </span>
                                 <div className="text-xs text-muted-foreground mt-1">
                                   {project.year} • {location}
                                 </div>

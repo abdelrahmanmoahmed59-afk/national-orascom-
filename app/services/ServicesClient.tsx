@@ -1,22 +1,22 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight } from "lucide-react"
+import { ArrowRight, ArrowUpRight, FileText } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/i18n/language-context"
+import type { SiteContent } from "@/lib/site-content/schema"
 
-type Service = {
-  id: string
-  num?: string
-  titleEn?: string
-  titleAr?: string
-  descEn?: string
-  descAr?: string
-  imageUrl?: string
-}
+type Service = SiteContent["services"][number]
+type ServiceFeaturePanel = SiteContent["servicesFeaturePanels"][number]
 
-export default function ServicesClient({ services }: { services: Service[] }) {
+export default function ServicesClient({
+  services,
+  servicePanels,
+}: {
+  services: Service[]
+  servicePanels: ServiceFeaturePanel[]
+}) {
   const { language, t, dir } = useLanguage()
 
   return (
@@ -50,6 +50,51 @@ export default function ServicesClient({ services }: { services: Service[] }) {
           </div>
         </div>
       </section>
+
+      {servicePanels.length > 0 && (
+        <section className="py-20 lg:py-28 border-t border-border">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <AnimatedSection animation="reveal-up">
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-6">
+                {servicePanels.map((panel) => {
+                  const title = language === "en" ? panel.titleEn : panel.titleAr || panel.titleEn
+                  const description = language === "en" ? panel.descriptionEn : panel.descriptionAr || panel.descriptionEn
+                  const offers = language === "en" ? panel.offersEn : panel.offersAr.length > 0 ? panel.offersAr : panel.offersEn
+
+                  return (
+                    <article
+                      key={panel.id}
+                      className="relative overflow-hidden border border-border/70 bg-card/90 p-6 lg:p-7 shadow-[0_18px_50px_rgba(15,15,15,0.05)]"
+                    >
+                      <div className="absolute right-5 top-4 text-4xl lg:text-5xl font-semibold text-foreground/8 select-none">
+                        {panel.number}
+                      </div>
+                      <div className="relative z-10 flex items-center gap-3">
+                        <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border/70 bg-background">
+                          <FileText className="h-4 w-4 text-muted-foreground" />
+                        </span>
+                        <h3 className="max-w-[16rem] text-lg leading-tight font-semibold text-foreground">{title}</h3>
+                      </div>
+                      <p className="relative z-10 mt-5 text-sm leading-7 text-muted-foreground">{description}</p>
+                      <p className="relative z-10 mt-6 text-[11px] font-semibold tracking-[0.22em] uppercase text-muted-foreground">
+                        {language === "en" ? "What We Offer:" : "ما الذي نقدمه:"}
+                      </p>
+                      <ul className="relative z-10 mt-4 space-y-3">
+                        {offers.map((offer) => (
+                          <li key={offer} className="flex items-start gap-3 text-sm leading-6 text-foreground/80">
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
+                            <span>{offer}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </article>
+                  )
+                })}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
       {/* Services */}
       <section className="py-24 lg:py-40 border-t border-border">
@@ -112,4 +157,3 @@ export default function ServicesClient({ services }: { services: Service[] }) {
     </div>
   )
 }
-

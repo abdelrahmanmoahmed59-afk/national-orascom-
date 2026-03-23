@@ -3,11 +3,10 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Search, Sun, Moon, Globe, ChevronDown } from "lucide-react"
+import { Menu, X, Search, Globe, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useLanguage } from "@/lib/i18n/language-context"
-import { useTheme } from "@/lib/theme-context"
 import { SearchDialog } from "@/components/search-dialog"
 import { cn } from "@/lib/utils"
 import type { ProjectItem, SiteContent } from "@/lib/site-content/schema"
@@ -20,7 +19,6 @@ export function Navbar({
   projects: ProjectItem[]
 }) {
   const { language, setLanguage, t, dir } = useLanguage()
-  const { theme, toggleTheme } = useTheme()
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -103,17 +101,17 @@ export function Navbar({
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="group flex items-center gap-3">
-              <span className="inline-flex h-11 w-11 items-center justify-center border border-border/60 bg-background/60 backdrop-blur overflow-hidden">
+            <Link href="/" className="group flex items-center gap-4">
+              <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_14px_40px_rgba(15,15,15,0.10)]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={branding.logo.src}
                   alt={branding.logo.alt[language]}
-                  className="h-8 w-8 object-contain"
+                  className="h-12 w-12 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_4px_10px_rgba(0,0,0,0.18)]"
                 />
               </span>
               <div className="leading-tight">
-                <div className="font-serif text-lg tracking-tight">{branding.companyName[language]}</div>
+                <div className="font-serif text-xl font-semibold tracking-tight">{branding.companyName[language]}</div>
                 <div className="hidden sm:block text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
                   {branding.tagline[language]}
                 </div>
@@ -220,12 +218,6 @@ export function Navbar({
               >
                 <Search className="h-4 w-4" />
                 <span className="sr-only">{t.nav.search}</span>
-              </Button>
-
-              {/* Theme Toggle */}
-              <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full w-10 h-10">
-                {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-                <span className="sr-only">Toggle theme</span>
               </Button>
 
               {/* Language Switcher */}

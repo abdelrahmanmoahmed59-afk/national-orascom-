@@ -87,6 +87,25 @@ const aboutValueSchema = z.object({
   descAr: z.string(),
 })
 
+const aboutCoreValueItemSchema = z.object({
+  id: z.string(),
+  labelEn: z.string(),
+  labelAr: z.string(),
+  imageUrl: z.string(),
+  statementEn: z.string(),
+  statementAr: z.string(),
+  introEn: z.string(),
+  introAr: z.string(),
+  pointsEn: z.array(z.string()).default([]),
+  pointsAr: z.array(z.string()).default([]),
+})
+
+const aboutCoreValuesSchema = z.object({
+  titleEn: z.string(),
+  titleAr: z.string(),
+  items: z.array(aboutCoreValueItemSchema).default([]),
+})
+
 const aboutMilestoneSchema = z.object({
   year: z.string(),
   titleEn: z.string(),
@@ -101,6 +120,17 @@ const serviceSchema = z.object({
   descEn: z.string(),
   descAr: z.string(),
   imageUrl: z.string(),
+})
+
+const serviceFeaturePanelSchema = z.object({
+  id: z.string(),
+  number: z.string(),
+  titleEn: z.string(),
+  titleAr: z.string(),
+  descriptionEn: z.string(),
+  descriptionAr: z.string(),
+  offersEn: z.array(z.string()).default([]),
+  offersAr: z.array(z.string()).default([]),
 })
 
 const projectSchema = z.object({
@@ -167,8 +197,10 @@ export const siteContentSchema = z
     about: aboutSchema,
     aboutStats: z.array(aboutStatSchema).default([]),
     aboutValues: z.array(aboutValueSchema).default([]),
+    aboutCoreValues: aboutCoreValuesSchema,
     aboutMilestones: z.array(aboutMilestoneSchema).default([]),
     services: z.array(serviceSchema).default([]),
+    servicesFeaturePanels: z.array(serviceFeaturePanelSchema).default([]),
     projects: z.array(projectSchema).default([]),
     careers: careersSchema,
     policies: policiesSchema,
@@ -180,4 +212,7 @@ export type LocalizedString = z.infer<typeof localizedStringSchema>
 export type ClientItem = z.infer<typeof clientSchema>
 export type ProjectItem = z.infer<typeof projectSchema>
 export type ServiceItem = z.infer<typeof serviceSchema>
+export type ServiceFeaturePanelItem = z.infer<typeof serviceFeaturePanelSchema>
+export type AboutCoreValueItem = z.infer<typeof aboutCoreValueItemSchema>
+export type AboutCoreValues = z.infer<typeof aboutCoreValuesSchema>
 export type JobOpeningItem = z.infer<typeof jobOpeningSchema>

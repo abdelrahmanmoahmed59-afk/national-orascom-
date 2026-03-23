@@ -44,9 +44,13 @@ export function PageLoader({ branding }: { branding: SiteContent["branding"] }) 
             transition: "all 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          <div className="h-20 w-20 border border-border/60 bg-background/60 backdrop-blur flex items-center justify-center overflow-hidden">
+          <div className="flex h-24 w-24 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_18px_45px_rgba(15,15,15,0.12)]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={branding.logo.src} alt={branding.logo.alt.en} className="h-14 w-14 object-contain" />
+            <img
+              src={branding.logo.src}
+              alt={branding.logo.alt.en}
+              className="h-16 w-16 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_5px_12px_rgba(0,0,0,0.20)]"
+            />
           </div>
         </div>
 

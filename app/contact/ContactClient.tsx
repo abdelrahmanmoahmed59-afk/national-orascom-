@@ -22,11 +22,7 @@ export default function ContactClient({ contact }: { contact: SiteContent["conta
             <AnimatedSection animation="reveal-up" delay={100}>
               <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[0.95]">
                 {language === "en" ? (
-                  <>
-                    Let&apos;s start a
-                    <br />
-                    <span className="italic font-normal">conversation</span>
-                  </>
+                  "Get In Touch"
                 ) : (
                   <>
                     لنبدأ

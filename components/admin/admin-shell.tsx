@@ -3,11 +3,10 @@
 import type { ReactNode } from "react"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { Globe, LogOut, Moon, Sun, User } from "lucide-react"
+import { Globe, LogOut, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useLanguage } from "@/lib/i18n/language-context"
-import { useTheme } from "@/lib/theme-context"
 import { cn } from "@/lib/utils"
 import type { SiteContent } from "@/lib/site-content/schema"
 
@@ -38,7 +37,6 @@ export function AdminShell({
   const pathname = usePathname()
   const router = useRouter()
   const { dir, language, setLanguage } = useLanguage()
-  const { theme, toggleTheme } = useTheme()
 
   async function logout() {
     await fetch("/api/admin/logout", { method: "POST" }).catch(() => null)
@@ -50,13 +48,17 @@ export function AdminShell({
     <div dir={dir} className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/admin" className="group flex items-center gap-3 min-w-0">
-            <span className="inline-flex h-11 w-11 items-center justify-center border border-border/60 bg-background/60 backdrop-blur overflow-hidden shrink-0">
+          <Link href="/admin" className="group flex items-center gap-4 min-w-0">
+            <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-border/80 bg-background shadow-[0_14px_40px_rgba(15,15,15,0.10)]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={branding?.logo.src ?? "/placeholder-logo.svg"} alt={branding?.logo.alt?.[language] ?? "Logo"} className="h-8 w-8 object-contain" />
+              <img
+                src={branding?.logo.src ?? "/placeholder-logo.svg"}
+                alt={branding?.logo.alt?.[language] ?? "Logo"}
+                className="h-12 w-12 object-contain brightness-[1.03] contrast-[1.18] saturate-[1.15] drop-shadow-[0_4px_10px_rgba(0,0,0,0.18)]"
+              />
             </span>
             <div className="leading-tight min-w-0">
-              <div className="font-serif text-lg tracking-tight truncate">
+              <div className="font-serif text-xl font-semibold tracking-tight truncate">
                 {branding?.companyName?.[language] ?? "Admin Dashboard"}
               </div>
               <div className="hidden sm:block text-[10px] tracking-[0.25em] uppercase text-muted-foreground truncate">
@@ -72,11 +74,6 @@ export function AdminShell({
                 <span className="text-sm truncate max-w-[160px]">{username}</span>
               </div>
             )}
-
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full w-10 h-10">
-              {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-              <span className="sr-only">Toggle theme</span>
-            </Button>
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

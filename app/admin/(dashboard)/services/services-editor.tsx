@@ -9,9 +9,28 @@ import { Textarea } from "@/components/ui/textarea"
 import type { SiteContent } from "@/lib/site-content/schema"
 
 type ServiceItem = SiteContent["services"][number]
+type ServiceFeaturePanelItem = SiteContent["servicesFeaturePanels"][number]
 
-export default function ServicesEditor({ initialServices }: { initialServices: ServiceItem[] }) {
+function linesToItems(value: string) {
+  return value
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+}
+
+function itemsToLines(items: string[]) {
+  return items.join("\n")
+}
+
+export default function ServicesEditor({
+  initialServices,
+  initialServicePanels,
+}: {
+  initialServices: ServiceItem[]
+  initialServicePanels: ServiceFeaturePanelItem[]
+}) {
   const [services, setServices] = useState<ServiceItem[]>(initialServices)
+  const [servicePanels, setServicePanels] = useState<ServiceFeaturePanelItem[]>(initialServicePanels)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const imageInputs = useRef<Record<string, HTMLInputElement | null>>({})
@@ -46,6 +65,40 @@ export default function ServicesEditor({ initialServices }: { initialServices: S
     setServices((prev) => prev.filter((service) => service.id !== id))
   }
 
+  function updateServicePanel(
+    id: string,
+    patch: Partial<ServiceFeaturePanelItem> | ((prev: ServiceFeaturePanelItem) => ServiceFeaturePanelItem),
+  ) {
+    setServicePanels((prev) =>
+      prev.map((panel) => {
+        if (panel.id !== id) return panel
+        return typeof patch === "function" ? patch(panel) : { ...panel, ...patch }
+      }),
+    )
+  }
+
+  function addServicePanel() {
+    const id = typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `service-panel-${Date.now()}`
+    const nextNum = (servicePanels.length + 1).toString().padStart(2, "0")
+    setServicePanels((prev) => [
+      ...prev,
+      {
+        id,
+        number: nextNum,
+        titleEn: "New Service Panel",
+        titleAr: "بطاقة خدمة جديدة",
+        descriptionEn: "",
+        descriptionAr: "",
+        offersEn: [],
+        offersAr: [],
+      },
+    ])
+  }
+
+  function deleteServicePanel(id: string) {
+    setServicePanels((prev) => prev.filter((panel) => panel.id !== id))
+  }
+
   async function uploadImage(file: File) {
     const form = new FormData()
     form.set("folder", "services")
@@ -64,6 +117,7 @@ export default function ServicesEditor({ initialServices }: { initialServices: S
       if (!currentRes.ok) throw new Error("Failed to load current content")
       const current = (await currentRes.json()) as any
       current.services = services
+      current.servicesFeaturePanels = servicePanels
 
       const res = await fetch("/api/admin/site-content", {
         method: "PUT",
@@ -84,7 +138,7 @@ export default function ServicesEditor({ initialServices }: { initialServices: S
       <div className="flex items-start justify-between gap-4">
         <div>
           <h1 className="font-serif text-3xl">Services</h1>
-          <p className="text-muted-foreground mt-2">Add, edit, and upload bilingual services content.</p>
+          <p className="text-muted-foreground mt-2">Add, edit, and upload bilingual services content and the top card grid.</p>
         </div>
         <div className="flex gap-2">
           <Button variant="outline" className="rounded-none h-10" onClick={addService}>
@@ -250,7 +304,136 @@ export default function ServicesEditor({ initialServices }: { initialServices: S
           ))}
         </div>
       )}
+
+      <div className="space-y-4 border-t border-border pt-8">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h2 className="font-serif text-2xl">Top Services Grid</h2>
+            <p className="text-muted-foreground mt-2">Manage the card section shown at the top of the services page.</p>
+          </div>
+          <Button variant="outline" className="rounded-none h-10" onClick={addServicePanel}>
+            <Plus className="h-4 w-4 mr-2" />
+            Add Card
+          </Button>
+        </div>
+
+        {servicePanels.length === 0 ? (
+          <div className="border border-border/60 p-8 text-muted-foreground">
+            No cards yet. Click <span className="font-medium">Add Card</span> to create the first one.
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {servicePanels.map((panel) => (
+              <details key={panel.id} className="group border border-border/60 bg-background/50">
+                <summary className="cursor-pointer list-none p-6 lg:p-8 flex items-start justify-between gap-6">
+                  <div className="min-w-0">
+                    <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">
+                      {panel.number || "--"} • {panel.id}
+                    </p>
+                    <h3 className="font-serif text-2xl mt-2">{panel.titleEn || "Untitled card"}</h3>
+                  </div>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="rounded-none h-10"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      deleteServicePanel(panel.id)
+                    }}
+                  >
+                    <Trash2 className="h-4 w-4 mr-2" />
+                    Delete
+                  </Button>
+                </summary>
+
+                <div className="px-6 lg:px-8 pb-8">
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <div className="space-y-6">
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">Number</Label>
+                          <Input
+                            value={panel.number}
+                            onChange={(e) => updateServicePanel(panel.id, { number: e.target.value })}
+                            className="rounded-none h-11 border-foreground/20"
+                            placeholder="01"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label className="text-xs tracking-[0.15em] uppercase">ID</Label>
+                          <Input value={panel.id} readOnly className="rounded-none h-11 border-foreground/20" />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">Title (EN)</Label>
+                        <Input
+                          value={panel.titleEn}
+                          onChange={(e) => updateServicePanel(panel.id, { titleEn: e.target.value })}
+                          className="rounded-none h-11 border-foreground/20"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">Title (AR)</Label>
+                        <Input
+                          value={panel.titleAr}
+                          onChange={(e) => updateServicePanel(panel.id, { titleAr: e.target.value })}
+                          className="rounded-none h-11 border-foreground/20"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">Description (EN)</Label>
+                        <Textarea
+                          value={panel.descriptionEn}
+                          onChange={(e) => updateServicePanel(panel.id, { descriptionEn: e.target.value })}
+                          rows={5}
+                          className="rounded-none border-foreground/20 resize-none"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">Description (AR)</Label>
+                        <Textarea
+                          value={panel.descriptionAr}
+                          onChange={(e) => updateServicePanel(panel.id, { descriptionAr: e.target.value })}
+                          rows={5}
+                          className="rounded-none border-foreground/20 resize-none"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-6">
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">What We Offer (EN)</Label>
+                        <Textarea
+                          value={itemsToLines(panel.offersEn)}
+                          onChange={(e) => updateServicePanel(panel.id, { offersEn: linesToItems(e.target.value) })}
+                          rows={8}
+                          className="rounded-none border-foreground/20 resize-none"
+                          placeholder="One bullet point per line"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label className="text-xs tracking-[0.15em] uppercase">What We Offer (AR)</Label>
+                        <Textarea
+                          value={itemsToLines(panel.offersAr)}
+                          onChange={(e) => updateServicePanel(panel.id, { offersAr: linesToItems(e.target.value) })}
+                          rows={8}
+                          className="rounded-none border-foreground/20 resize-none"
+                          placeholder="عنصر واحد في كل سطر"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
-

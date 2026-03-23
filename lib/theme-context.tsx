@@ -1,8 +1,8 @@
 "use client"
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+import { createContext, useContext, useEffect, type ReactNode } from "react"
 
-type Theme = "light" | "dark"
+type Theme = "light"
 
 interface ThemeContextType {
   theme: Theme
@@ -10,39 +10,26 @@ interface ThemeContextType {
   setTheme: (theme: Theme) => void
 }
 
+const noopToggleTheme = () => {}
+const noopSetTheme = (_theme: Theme) => {}
+
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("light")
-  const [mounted, setMounted] = useState(false)
+const fixedLightTheme: ThemeContextType = {
+  theme: "light",
+  toggleTheme: noopToggleTheme,
+  setTheme: noopSetTheme,
+}
 
+export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
-    setMounted(true)
-    const saved = localStorage.getItem("act-theme") as Theme
-    if (saved && (saved === "light" || saved === "dark")) {
-      setThemeState(saved)
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setThemeState("dark")
-    }
+    localStorage.setItem("act-theme", "light")
+    document.documentElement.classList.remove("dark")
+    document.documentElement.classList.add("light")
+    document.documentElement.style.colorScheme = "light"
   }, [])
 
-  useEffect(() => {
-    if (mounted) {
-      localStorage.setItem("act-theme", theme)
-      document.documentElement.classList.remove("light", "dark")
-      document.documentElement.classList.add(theme)
-    }
-  }, [theme, mounted])
-
-  const toggleTheme = () => {
-    setThemeState((prev) => (prev === "light" ? "dark" : "light"))
-  }
-
-  const setTheme = (newTheme: Theme) => {
-    setThemeState(newTheme)
-  }
-
-  return <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>{children}</ThemeContext.Provider>
+  return <ThemeContext.Provider value={fixedLightTheme}>{children}</ThemeContext.Provider>
 }
 
 export function useTheme() {

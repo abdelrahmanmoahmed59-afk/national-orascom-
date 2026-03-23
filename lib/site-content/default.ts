@@ -1,4 +1,6 @@
 import type { SiteContent } from "./schema"
+import { DEFAULT_ABOUT_CORE_VALUES } from "./default-about-core-values"
+import { DEFAULT_SERVICE_FEATURE_PANELS } from "./default-service-panels"
 
 export const DEFAULT_SITE_CONTENT: SiteContent = {
   version: 1,
@@ -73,11 +75,13 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
   },
   aboutStats: [],
   aboutValues: [],
+  aboutCoreValues: DEFAULT_ABOUT_CORE_VALUES,
   aboutMilestones: [],
   services: [],
+  servicesFeaturePanels: DEFAULT_SERVICE_FEATURE_PANELS,
   projects: [],
   careers: {
-    applyEmail: "careers@nationalorascom.com",
+    applyEmail: "careers@n-orascom-kw.net",
     jobs: [],
   },
   policies: {

@@ -45,6 +45,11 @@ export function ContactMain({ contact }: { contact: SiteContent["contact"] }) {
       .filter((s) => s.url)
   }, [contact.socials])
 
+  const mapSrc = useMemo(() => {
+    const query = encodeURIComponent(contact.address.en.replace(/\s+/g, " ").trim())
+    return `https://www.google.com/maps?q=${query}&output=embed`
+  }, [contact.address.en])
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const formEl = e.currentTarget as HTMLFormElement
@@ -227,14 +232,14 @@ export function ContactMain({ contact }: { contact: SiteContent["contact"] }) {
             <AnimatedSection animation="reveal-up" delay={200}>
               <div className="h-full min-h-[500px] lg:min-h-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111422.92888865825!2d47.91620599999999!3d29.3759163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c6c0b7f8507%3A0x8a9a0f2b0c8f0f0f!2sKuwait%20City%2C%20Kuwait!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                  src={mapSrc}
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "500px", filter: "grayscale(100%)" }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="National Orascom Location"
+                  title={language === "en" ? "National Orascom Location" : "موقع ناشونال أوراسكوم"}
                 />
               </div>
             </AnimatedSection>

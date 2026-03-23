@@ -8,8 +8,8 @@ export default async function AdminAboutPage() {
       initialAbout={content.about}
       initialStats={content.aboutStats}
       initialValues={content.aboutValues}
+      initialCoreValues={content.aboutCoreValues}
       initialMilestones={content.aboutMilestones}
     />
   )
 }
-

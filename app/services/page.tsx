@@ -5,5 +5,5 @@ import { unstable_noStore as noStore } from "next/cache"
 export default async function ServicesPage() {
   noStore()
   const siteContent = await readSiteContent()
-  return <ServicesClient services={siteContent.services} />
+  return <ServicesClient services={siteContent.services} servicePanels={siteContent.servicesFeaturePanels} />
 }

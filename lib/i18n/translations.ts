@@ -16,7 +16,7 @@ export const translations = {
       title: "National Orascom",
       subtitle: "Construction & Contracting",
       description:
-        "We deliver civil, structural, MEP, and fit-out project packages with safety-first execution and disciplined project management.",
+        "We deliver civil, structural, MEP, and fit-out project packages with safety-first execution and disciplined project management. National Orascom is a Kuwaiti-based construction and general contracting firm, officially licensed by the Ministry of Commerce & Industry. With a solid capital base and a well-structured organizational setup, we are recognized for delivering quality building solutions across commercial, residential, and industrial projects.",
       cta: "View Projects",
       ctaSecondary: "Contact Us",
     },
@@ -151,7 +151,7 @@ export const translations = {
       title: "ناشونال أوراسكوم",
       subtitle: "البناء والمقاولات",
       description:
-        "نقدم حزم أعمال مدنية وإنشائية وMEP وتشطيبات عبر تنفيذ منضبط يضع السلامة أولاً وإدارة مشاريع فعّالة.",
+        "نقدم حزم أعمال مدنية وإنشائية وMEP وتشطيبات عبر تنفيذ منضبط يضع السلامة أولاً وإدارة مشاريع فعّالة. شركة أوراسكوم الوطنية هي شركة مقاولات عامة وإنشائية مقرها الكويت، مرخصة رسمياً من وزارة التجارة والصناعة. بفضل رأس مالها المتين وهيكلها التنظيمي المتين، تُعرف الشركة بتقديم حلول بناء عالية الجودة في المشاريع التجارية والسكنية والصناعية.",
       cta: "عرض المشاريع",
       ctaSecondary: "تواصل معنا",
     },
