@@ -676,7 +676,7 @@
         "حزم تشطيبات متميزة",
         "نقاط ضبط جودة في الموقع"
       ],
-      "heroImageUrl": "/uploads/projects/ebdc6894-bf80-4025-835c-acaafd15950f.jpg",
+      "heroImageUrl": "/uploads/projects/39f587a5-5f15-47b8-93d4-0b6b8d0429d6.jpg",
       "galleryImageUrls": [
         "/uploads/projects/a18e0d0f-f61a-4e2e-9a44-039c43ab8ec5.jpg",
         "/uploads/projects/d8bfee21-96e9-4a1b-855d-7bc33784387a.jpg",
@@ -751,7 +751,7 @@
         "أرضيات عالية التحمل",
         "تنفيذ ميداني وفق متطلبات السلامة"
       ],
-      "heroImageUrl": "/uploads/projects/f1e49ba0-aacd-4aee-a33f-cd2a79a558e6.jpg",
+      "heroImageUrl": "/uploads/projects/d889a7a9-2ef2-4127-ae63-016d418dcde4.jpg",
       "galleryImageUrls": [
         "/uploads/projects/9331b4b2-e930-4e8b-a9bc-40eb83f2857e.jpg",
         "/uploads/projects/009b2174-c07b-435d-8f94-e04c6f40aef3.jpg",
@@ -846,7 +846,7 @@
         "إجراءات موقع نظيف",
         "حزمة تشغيل وتسليم متكاملة"
       ],
-      "heroImageUrl": "/uploads/projects/bfe24a64-7dda-4412-a047-f22f8e4e08b1.png",
+      "heroImageUrl": "/uploads/projects/184d5837-2b86-485c-87c0-92b8c0ad59e8.png",
       "galleryImageUrls": [
         "/uploads/projects/a5c0eac9-02f9-4003-8d75-c1ab0f9ebfeb.jpg",
         "/uploads/projects/ee5f1d8d-e9e3-4ba1-a503-d97e81b22152.png",
@@ -907,7 +907,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/02da7cec-b5b1-46c0-8160-94e099601b92.jpg",
+      "heroImageUrl": "/uploads/projects/f15abf09-4efb-4d05-aefc-293807aecc8d.jpg",
       "galleryImageUrls": [
         "/uploads/projects/c4967045-230e-46e4-8197-17f98b572312.jpg",
         "/uploads/projects/5cd8aa2b-7041-48ab-acc2-8da30ca8f3c6.jpg",
@@ -1017,7 +1017,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/25705904-073d-4f5b-accb-63f6470f59eb.jpg",
+      "heroImageUrl": "/uploads/projects/251fc011-7cbd-4362-843f-17609b21d312.jpg",
       "galleryImageUrls": [
         "/uploads/projects/952251f7-534b-472b-87e9-94036b18ac6e.jpg",
         "/uploads/projects/47a8387f-6b9b-4304-9d32-682bf0a01daa.jpg",
@@ -1164,7 +1164,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/48218520-8523-4690-8033-f2f756e35523.jpg",
+      "heroImageUrl": "/uploads/projects/b616b63c-8856-46a7-b4c4-5b842cc943de.jpg",
       "galleryImageUrls": [
         "/uploads/projects/0e85cbaf-f042-497a-8d43-838fc94c7747.jpg",
         "/uploads/projects/ee9fa9c9-52ba-4dd6-8d20-dc53c1f338b2.jpg",
@@ -1398,7 +1398,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/6c318d6c-1156-4491-a014-f911edede094.jpg",
+      "heroImageUrl": "/uploads/projects/2305039b-4253-4e29-afa2-bca03ab9dfb5.jpg",
       "galleryImageUrls": [
         "/uploads/projects/40f03001-3a3d-46a8-959c-5faa965d8731.jpg",
         "/uploads/projects/705d5466-a197-4ce5-8796-152a56b8c43b.jpg",
@@ -1449,7 +1449,7 @@
         "تحسين سعة التصريف",
         "حزمة تسليم ومخططات As-Built"
       ],
-      "heroImageUrl": "/uploads/projects/39195532-e6fc-4291-a365-0499f2225ea8.jpg",
+      "heroImageUrl": "/uploads/projects/2baced5c-9c43-4fb7-a3fb-f0b6a6eaaddc.jpg",
       "galleryImageUrls": [
         "/uploads/projects/62b3c58f-1495-4dbc-a7cb-041e69148732.jpg",
         "/uploads/projects/4030386c-a43b-4f5a-932f-6d3878d659db.jpg",
@@ -1593,11 +1593,29 @@
       "summaryAr": "بناء مبنى السوق المركزي",
       "detailsEn": "Construction of central Market building ",
       "detailsAr": "بناء مبنى السوق المركزي",
-      "scopeEn": [],
-      "scopeAr": [],
-      "highlightsEn": [],
-      "highlightsAr": [],
-      "heroImageUrl": "/uploads/projects/9796efce-f265-4319-bd9e-8f3bca90a583.jpg",
+      "scopeEn": [
+        "Earthworks",
+        "Drainage",
+        "Roadworks",
+        "Signage & safety elements"
+      ],
+      "scopeAr": [
+        "أعمال ترابية",
+        "تصريف مياه",
+        "أعمال طرق",
+        "لوحات وإرشادات وعناصر سلامة"
+      ],
+      "highlightsEn": [
+        "Phased traffic management",
+        "Drainage capacity improvements",
+        "Documented as-built package"
+      ],
+      "highlightsAr": [
+        "إدارة حركة على مراحل",
+        "تحسين سعة التصريف",
+        "حزمة تسليم ومخططات As-Built"
+      ],
+      "heroImageUrl": "/uploads/projects/3247e3c5-9df1-4a56-ad0e-9eaf45da8873.jpg",
       "galleryImageUrls": [
         "/uploads/projects/32fc724d-5778-4b5e-b6e0-cf671abc4be6.jpg",
         "/uploads/projects/89935cd8-5115-452b-bfc0-07b78e76db02.jpg",
